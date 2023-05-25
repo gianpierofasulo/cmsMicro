@@ -1,0 +1,12 @@
+.bashrc
+.profile
+_old/
+__db/
+public/jsontomachine/
+public/media/
+app/immaginiprodotti/
+.DS_Store
+
+# Commit your application’s lock file https://getcomposer.org/doc/01-basic-usage.md#commit-your-composer-l$
+# You may choose to ignore a library lock file http://getcomposer.org/doc/02-libraries.md#lock-file
+# composer.lock

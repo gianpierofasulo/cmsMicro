@@ -1,0 +1,38 @@
+<?php require_once  "header.php"; ?>
+  <body>
+    <?php   include "leftsidebar.phtml"; ?>
+   
+    <div class="wrapper d-flex flex-column min-vh-100 bg-light">
+     
+        <?php require_once "headerbar.php"; ?>
+        
+      <div class="body flex-grow-1 px-3">
+          
+              <?php  
+    
+     require_once $main_content; 
+      if ($page != 'layout') {
+           require_once $main_content; 
+           
+      } else {
+          
+          if ( $_SESSION['utente_id_ruolo'] == 1 ) {
+              require_once "dashboard_superadmin.phtml";
+          } else if ( $_SESSION['utente_id_ruolo'] == 2  ) {
+               require_once "dashboard_admin.phtml";
+          }
+           ?>
+          
+          
+          
+          
+      <?php } ?>
+      </div>
+        
+            <?php require_once "footer.php"; ?>
+    </div>
+      
+   <?php require_once "footerscripts.php"; ?>
+    
+  </body>
+</html>

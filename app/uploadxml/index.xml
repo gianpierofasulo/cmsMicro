@@ -1,0 +1,1303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<catalogue name="ddx-master" timestamp="2021-10-22T14:18:13" type="master">
+  <product id="analysis_testgravidanza_1" code="8058664028108" name="Analysis Test di Gravidanza 1 pz" category="Test diagnostici" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Il test di gravidanza Analysis è un test qualitativo rapido per la determinazione della Gonadotropina Corionica umana (hCG) nell'urina. Grazie all'elevata sensibilità di questo test, è possibile determinare la gravidanza fin dal primo giorno della mancata mestruazione. Affidabilità superiore al 99%.</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="analysis_testgravidanza_2" code="8058664028115" name="Analysis Test di Gravidanza 2 pz" category="Test diagnostici" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="30">
+    <description>Il test di gravidanza Analysis è un test qualitativo rapido per la determinazione della Gonadotropina Corionica umana (hCG) nell'urina. Grazie all'elevata sensibilità di questo test, è possibile determinare la gravidanza fin dal primo giorno della mancata mestruazione. Affidabilità superiore al 99%.</description>
+    <prices>
+      <price level="0">1800</price>
+      <price level="1">1800</price>
+    </prices>
+  </product>
+  <product id="control_aloecare_6" code="8411134124371" name="Control Aloe Care Profilattici 6 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Control Aloe Care sono i preservativi lubrificati con Aloe Vera e profumati al Gelsomino. Offrono un apporto di scorrevolezza in più rispetto ad un normale profilattico.</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="control_chocolate_12" code="8411134140586" name="Control New Chocolate Profilattici 12 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Confezione da 12 preservativi.
+Control Chocolate , è un profilattico dal piacevole e riconosciuto potere afrodisiaco dell'aroma e colore del cioccolato.
+Scopri una nuova passione con Control Chocolate Addiction. Control Chocolate Addiction è un profilattico in lattice di gomma naturale, sottile, liscio, anatomico, a lati non paralleli, trasparente, lubrificato e con serbatoio.</description>
+    <prices>
+      <price level="0">1600</price>
+      <price level="1">1600</price>
+    </prices>
+  </product>
+  <product id="control_chocolate_6" code="8411134140579" name="Control New Chocolate Profilattici 6 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Control Chocolate Addiction ideali per un piacere sessuale ancora più intenso dato dal sapore gustoso afrodisiaco del cioccolato.</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="control_chocolateaddiction_6" code="8411134119483" name="Control Chocolate Addiction Profilattici 6 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Control Essence Chocolate Addiction Profilattico aromatizzato al cioccolato.</description>
+    <prices>
+      <price level="0">700</price>
+      <price level="1">700</price>
+    </prices>
+  </product>
+  <product id="control_cosmicpleasure" code="8058664108053" name="Control Cosmic Pleasure Vibratore" category="Sex Toys Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Mini stimolatore vaginale con superfici sferiche per un maggiore piacere
+Silicone medico molto morbido al tatto
+5 diverse vibrazioni
+Facile da usare: basta un pulsante per accendere, spegnere e cambiare la vibrazione
+Pulsante con luce soffusa per l'uso al buio</description>
+    <prices>
+      <price level="0">2500</price>
+      <price level="1">2500</price>
+    </prices>
+  </product>
+  <product id="control_doublevibes" code="8058664130252" name="Control Double Vibes" category="Sex Toys Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="35">
+    <description>Stimolatore per clitoride e zone erogene
+5 diversi livelli di intensità che possono essere facilmente regolati
+Silicone medico molto morbido al tatto
+Sommergibile sott'acqua
+Privo di ftalati e metalli pesanti</description>
+    <prices>
+      <price level="0">2500</price>
+      <price level="1">2500</price>
+    </prices>
+  </product>
+  <product id="control_energy_6" code="8411134119377" name="Control Energy Profilattici 6 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Rapporti più sicuri e intensi per entrambi i partner grazie a Control Energy. Energy Control è un preservativo in lattice di gomma naturale. Dotato di forma anatomica, Control si avvale della combinazione di un lubrificante speciale e di un dedalo di rilievi e nervature studiati per procurare il massimo piacere ad entrambi i partner.</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="control_exoticescape_gel" code="8411134135803" name="Control Exotic Escape Gel 200 ml" category="Lubrificanti Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="50">
+    <description>Gel massaggio idratande per il corpo per momenti di sensualità e divertimento
+Compatibile con il profilattico in caso di contatto
+A base acquosa, ipoallergenico, no fenossietanolo, no parabeni, 100 % Made in Italy</description>
+    <prices>
+      <price level="0">1200</price>
+      <price level="1">1200</price>
+    </prices>
+  </product>
+  <product id="control_extralube_12" code="8447190369319" name="Control New Extralube Profilattici 12 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Confezione da 12 pezzi 
+
+La forma speciale e la maggior lubrificazione Control Nature Xtra Lube consentono la massima adattabilità, rendendo il vostro rapporto più piacevole.</description>
+    <prices>
+      <price level="0">1600</price>
+      <price level="1">1600</price>
+    </prices>
+  </product>
+  <product id="control_extralube_6" code="8411134139634" name="Control New Extralube Profilattici 6 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>La forma speciale e la maggior lubrificazione Control Nature Xtra Lube consentono la massima adattabilità, rendendo il vostro rapporto più piacevole.</description>
+    <prices>
+      <price level="0">900</price>
+      <price level="1">900</price>
+    </prices>
+  </product>
+  <product id="control_feelxl" code="8058664108336" name="Control Feel XL Vibratore" category="Sex Toys Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Vibratore 5 velocità
+Uso: vagina, clitoride, anale
+Plastica ABS, silicone medicale ipoallergenico
+Impermeabile
+Dimensioni 16 cm x 3,4 cm
+Batterie incluse</description>
+    <prices>
+      <price level="0">0</price>
+      <price level="1">0</price>
+    </prices>
+  </product>
+  <product id="control_finissimo_12" code="8411134140234" name="Control Finissimo Original Profilattici 12 Pezzi" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Control Finissimo Original 12 Pezzi
+Più aumentano le sensazioni, più è intenso il piacere: Finissimo Original 0.05 mm è un preservativo molto sottile e con forma anatomica che offre ottimale adattabilità ed elevata sensibilità durante il rapporto.</description>
+    <prices>
+      <price level="0">1600</price>
+      <price level="1">1600</price>
+    </prices>
+  </product>
+  <product id="control_finissimo_3" code="8411134140296" name="Control Finissimo Profilattici 3 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Il miglior preservativo di control. Il suo spessore super sottile rende facile godere della estrema sensibilità, mentre la sua forma ergonomica favorisce la massima adattabilità. Realizzato in lattice, con serbatoio e lubrificato.</description>
+    <prices>
+      <price level="0">200</price>
+      <price level="1">200</price>
+    </prices>
+  </product>
+  <product id="control_finissimo_senso_12" code="8411134140388" name="Control Finissimo Senso Profilattici 12 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Control Sensivity Finissimo Senso 0.06mm preservativo sottile pensato per chi cerca una elevata sensibilità durante il rapporto.</description>
+    <prices>
+      <price level="0">1600</price>
+      <price level="1">1600</price>
+    </prices>
+  </product>
+  <product id="control_finissimo_senso_6" code="8411134140371" name="Control Finissimo Senso Profilattici 6 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Control Sensivity Finissimo Senso 0.06mm preservativo sottile pensato per chi cerca una elevata sensibilità durante il rapporto.</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="control_finissimo_ultrafeel_10" code="8411134140326" name="Control Finissimo Ultrafeel Profilattici 10 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Il preservativo è più sottile del 30% rispetto alla gamma standard.
+Garantisce la massima sensibilità nelle relazioni grazie al suo spessore minimo.
+Con una lubrificazione ottimale.</description>
+    <prices>
+      <price level="0">1200</price>
+      <price level="1">1200</price>
+    </prices>
+  </product>
+  <product id="control_finissimo_ultrafeel_6" code="8411134140289" name="Control Finissimo Ultrafeel Profilattici 6 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Control Sensivity Finissimo Ultrafeel 0.04mm è il preservativo più sottile della gamma e permette di vivere intensamente ogni momento di piacere.</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="control_finissimo_xl_12" code="8411134140333" name="Control Finissimo Original XL Profilattici 12 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Control Finissimo XL è il miglior preservativo di Control e, a sua volta, più largo e più lungo dello standard.
+Il suo spessore ultrasottile facilita il piacere grazia a un'estrema sensibilità, mentre il suo speciale design anatomico XL lo rende molto più comodo da posizionare e utilizzare.
+Massima sensibilità e adattabilità nello stesso preservativo.</description>
+    <prices>
+      <price level="0">1600</price>
+      <price level="1">1600</price>
+    </prices>
+  </product>
+  <product id="control_finissimo_xl_6" code="8411134140340" name="Control Finissimo Original XL Profilattici 6 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Control Sensivity Finissimo Xtra Large è il profilattico con sensibilità e comfort durante il rapporto: molto sottile e con ampiezza e lunghezza superiore.</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="control_finissimoeasyway_6" code="8411134126672" name="Control Finissimo Easy Way Profilattici 6 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Profilattici super sottili e più facili da
+indossare. Più sensibilità senza interruzione.</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="control_finissimoold_12" code="8411134141354" name="Control Finissimo Profilattici 12 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Control Finissimo è il profilattico più sottile di Control. Il suo spessore super sottile garantisce un estrema sensibilità durante il rapporto, mentre la sua forma ergonomica consente un ottima adattabilità. Massima sensibilità e adattabilità in un unico profilattico. Control Adapta Finissimo è un profilattico in lattice di gomma naturale della massima qualità, sottile, liscio, anatomico, a lati non paralleli, trasparente, lubrificato e con serbatoio.</description>
+    <prices>
+      <price level="0">1700</price>
+      <price level="1">1700</price>
+    </prices>
+  </product>
+  <product id="control_finissimoold_6" code="8411134119636" name="Control Finissimo Profilattici 6 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Profilattici adatti come contraccettivi e proteggono dalle malattie sessualmente trasmissibili. Lo spessore, quasi impercettibile, offre una grande sensibilità durante il rapporto mentre la forma ergonomica consente un'ottimale adattabilità.</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="control_finissimooriginaleasyway_6" code="8411134140456" name="Control Finissimo Original Easy Way Profilattici 6 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Finissimo Easy Way è pensato per chi cerca grandi sensazioni e spontaneità nei momenti di piacere: un preservativo sottile, con spessore ridotto rispetto ai modelli standard della linea Control, comodo da indossare grazie alla delicata linguetta che indica il verso giusto e permette di srotolarlo facilmente.</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="control_finissimoxlold_6" code="8411134119605" name="Control Finissimo XL Profilattici 6 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Control Finissimo sono preservativi sottili e ultra sensibili: con uno spessore di 0,05 mm e una larghezza nominale di 54 mm, perfetti per le misure standard comode.</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="control_forte_6" code="8411134119698" name="Control Forte Profilattici 6 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Profilattici adatti come contraccettivi e proteggono dalle malattie sessualmente trasmissibili. La forma particolare consente grande adattabilità. Caratterizzati da uno spessore maggiorato che nulla toglie alla sensibilità durante il rapporto, sono in lattice di gomma naturale, sottili, lisci, anatomici, a lati non paralleli, trasparenti, lubrificati e con serbatoio. Larghezza nominale 54 mm</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="control_fussion_12" code="8411134140661" name="Control Fussion Profilattici 12 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Control New Fusion 12 Pezzi
+Un'esplosione di aromi afrodisiaci
+Quando si vuole aggiungere un tocco di fantasia ai momenti di piacere, Fussion è una scelta giusta: ogni confezione contiene preservativi con tre diversi aromi di cioccolato, pesca e menta, adatti per dare una dose di gusto al rapporto e risvegliare i sensi con colori e fragranze sempre nuovi</description>
+    <prices>
+      <price level="0">1600</price>
+      <price level="1">1600</price>
+    </prices>
+  </product>
+  <product id="control_fussionold_12" code="8411134119612" name="Control Fussion Profilattici 12 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Control Fussion è un profilattico in lattice di gomma naturale, sottile, liscio, anatomico, a lati non paralleli, con serbatoio, lubrificato con aroma al cioccolato, pesca o menta e di colore rispettivamente marrone, giallo o verde.</description>
+    <prices>
+      <price level="0">1700</price>
+      <price level="1">1700</price>
+    </prices>
+  </product>
+  <product id="control_geishaballs" code="8411134138316" name="Control Geisha Balls Sex Toy" category="Sex Toys Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="50">
+    <description>Dispositivo progettato per stimolare e aiutare la preparazione dell'attività sessuale
+Aiuta le donne a rafforzare i muscoli vaginali e pelvici attraverso la pratica di esercizi kegel
+La pratica regolare di esercizi kegel può portare benefici per l'elasticità vaginale
+Contiene un sacchetto per riporlo</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="control_handcleanser" code="8058664140879" name="Control Hand Clanser 25 ml" category="Prodotti Generici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="20">
+    <description>Gel detergente mani con antibatterico igienizzante</description>
+    <prices>
+      <price level="0">800</price>
+      <price level="1">800</price>
+    </prices>
+  </product>
+  <product id="control_hotpassion_10" code="8411134140692" name="Control Hot Passion Profilattici 10 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Confezione da 10 pezzi
+In lattice naturale
+Forma Anatomica Adapta
+Rilievi in superficie per extra stimolazione
+Effetto caldo</description>
+    <prices>
+      <price level="0">1500</price>
+      <price level="1">1500</price>
+    </prices>
+  </product>
+  <product id="control_hotpassion_gel" code="8058664142163" name="Control Hot Passion Gel 200 ml" category="Lubrificanti Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="60">
+    <description>Control Hot Passion Gel da massaggio idratante a base acquosa con azione riscaldante. Ideale per massaggi sensuali su tutto il corpo.</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="control_ice_10" code="8411134140821" name="Control Ice Feel Profilattici 10 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Control Essence Ice Feel Profilattico per chi anche nei momenti più hot ha bisogno di un effetto rinfrescante. Con Control Ice Feel entrambi i partner verranno travolti da un eccitante sensazione di freschezza.</description>
+    <prices>
+      <price level="0">1500</price>
+      <price level="1">1500</price>
+    </prices>
+  </product>
+  <product id="control_icefeel_gel" code="8058664130245" name="Control Ice Feel Gel 200 ml" category="Lubrificanti Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="50">
+    <description>Control Ice Feel 3in1 Pleasure Gel idratante da massaggio a base acquosa con azione rinfrescante. Ideale per massaggi sensuali su tutto il corpo grazie all’innovativo tappo massaggiante con 5 sfere che, combinato con l’effetto freschezza.</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="control_intensefruit_6" code="8411134119711" name="Control Intense Fruit Profilattici 6 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Control Essence Intense Fruit Profilattico aromatizzato alla pesca.</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="control_latexfree" code="8411134129857" name="Control Latex Free Profilattici 5 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Control Latex Free è un preservativo realizzato in poliuretano, è un'alternativa anallergica e sottile che regala una elevata e intensa sensibilità durante il rapporto.</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="control_latexfree_5" code="8411134141057" name="Control Latex Free Profilattici 5 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Control New Latex Free è un preservativo realizzato in poliuretano, è un'alternativa anallergica e sottile che regala una elevata e intensa sensibilità durante il rapporto.</description>
+    <prices>
+      <price level="0">1200</price>
+      <price level="1">1200</price>
+    </prices>
+  </product>
+  <product id="control_lubgel_aloe" code="8058664099504" name="Control Lub Gel Aloe 75 ml" category="Lubrificanti Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="60">
+    <description>Effetto lubrificante con estratto naturale di aloe
+Non unge, non sporca, non macchia
+Base acqua, senza zucchero, senza parabeni
+100% Made in Italy
+Colore trasparente e delicato aroma di gelsomino</description>
+    <prices>
+      <price level="0">1100</price>
+      <price level="1">1100</price>
+    </prices>
+  </product>
+  <product id="control_lubgel_chocolate" code="8058664099832" name="Control Lub Gel Chocolate 75 ml" category="Lubrificanti Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="60">
+    <description>Gel sessuale con effetto idratante
+A base acquosa, senza zucchero e parabeni
+Può essere usato insieme al preservativo
+Aroma cioccolato, non unge, non macchia
+È un dispositivo medico CE
+100% made in Italy
+Tubetto da 75 ml</description>
+    <prices>
+      <price level="0">1100</price>
+      <price level="1">1100</price>
+    </prices>
+  </product>
+  <product id="control_lubgel_infinity" code="8058664099825" name="Control Lub Gel Infinity 75 ml" category="Lubrificanti Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="60">
+    <description>Effetto lubrificante a lunga durata
+Ideale quando è necessaria una maggiore lubrificazione
+Base silicone, senza zucchero, senza parabeni
+100% made in italy
+Colore trasparente e senza profumazione
+Unità: 1.0</description>
+    <prices>
+      <price level="0">1100</price>
+      <price level="1">1100</price>
+    </prices>
+  </product>
+  <product id="control_lubgel_nature" code="8058664099511" name="Control Lub Gel Nature 75 ml" category="Lubrificanti Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="60">
+    <description>Gel intimo lubrificante a base acquosa
+Effetto idratante
+Colore trasparente
+Prodotto in Italia
+Confezione da 75 ml</description>
+    <prices>
+      <price level="0">1100</price>
+      <price level="1">1100</price>
+    </prices>
+  </product>
+  <product id="control_lubgel_tropical" code="8058664099801" name="Control Lub Gel Tropical 75 ml" category="Lubrificanti Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="60">
+    <description>Effetto lubrificante
+Non unge, non sporca, non macchia
+Base acqua, senza zucchero, senza parabeni
+100% Made in Italy
+Colore trasparente e aroma di frutto della passione</description>
+    <prices>
+      <price level="0">1100</price>
+      <price level="1">1100</price>
+    </prices>
+  </product>
+  <product id="control_lubgel_warmtouch" code="8058664099818" name="Control Lub Gel Warm Touch 75 ml" category="Lubrificanti Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="60">
+    <description>Gel lubrificante a base acquosa ed effetto calore, per un piacere più confortevole e avvolgente.
+Effetto caldo, idratante
+È un dispositivo medico CE
+Può essere usato insieme al preservativo
+100% made in italy</description>
+    <prices>
+      <price level="0">1100</price>
+      <price level="1">1100</price>
+    </prices>
+  </product>
+  <product id="control_madagascar_gel" code="8411134135834" name="Control Madagascar Gel 200 ml" category="Lubrificanti Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="50">
+    <description>Gel per massaggio idratante per il corpo per momenti di sensualità e divertimento
+Compatibile con il profilattico in caso di contatto
+A base acquosa, ipoallergenico, senza fenossietanolo e parabeni
+Non macchia e dona al tatto una sensazione di piacevolezza</description>
+    <prices>
+      <price level="0">1200</price>
+      <price level="1">1200</price>
+    </prices>
+  </product>
+  <product id="control_mediterransea_gel" code="8411134135872" name="Control Mediterran Sea Gel 200 ml" category="Lubrificanti Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="45">
+    <description>Il gel Control 2 in 1 Mediterranean Sea è un massaggiante e lubrificante sessuale completamente Made in Italy per vivere con la massima intensità i momenti intimi di coppia, una vera e propria ondata di piacere agli aromi di agrumi e legno di sandalo, per rievocare l’atmosfera unica di un tramonto sul Mediterraneo. Fresco e delicato, dalla texture morbida e setosa, il lubrificante Control 2 in 1 Mediterranean Sea in confezione da 200 ml garantisce un’azione idratante e lubrificante ideale per un piacere intenso e spontaneo. Grazie alla doppia azione sensoriale, può essere impiegato sia per massaggi che come lubrificante intimo per il rapporto sessuale. </description>
+    <prices>
+      <price level="0">1200</price>
+      <price level="1">1200</price>
+    </prices>
+  </product>
+  <product id="control_nature2in1" code="8411134133151" name="Control Nature 2 in 1 Profilattici 3 pz + Gel 3 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Kit composto da Profilattico Control Nature in lattice e Lubrificante Control pleasure</description>
+    <prices>
+      <price level="0">500</price>
+      <price level="1">500</price>
+    </prices>
+  </product>
+  <product id="control_nature_2in1" code="8411134140487" name="Control Nature 2 in 1 - 3 Profilattici + 3 Gel" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>2 in 1 Nature è un kit dedicato ai momenti di piacere: ogni confezione contiene un preservativo Control Nature e una dose di gel lubrificante Control Nature.</description>
+    <prices>
+      <price level="0">500</price>
+      <price level="1">500</price>
+    </prices>
+  </product>
+  <product id="control_natureeasyway_6" code="8411134140180" name="Control Nature Easy Way Profilattici 6 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Control Easy Way Nature è un preservativo che consente una perfetta vestibilità facilitando il posizionamento grazie ad un esclusivo applicatore.</description>
+    <prices>
+      <price level="0">800</price>
+      <price level="1">800</price>
+    </prices>
+  </product>
+  <product id="control_natureold_12" code="8411134119452" name="Control Nature Profilattici 12 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Consente ottima adattabilità per un rapporto naturale
+Forma Adapta
+Lubrificato e con serbatoio; larghezza nominale 54 mm; prodotto monouso
+Profilattico in lattice di gomma naturale</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="control_natureold_24" code="8411134119803" name="Control Nature Profilattici 24 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="70">
+    <description>Un rapporto naturale
+Forma Adapta
+Lubrificato e con serbatoio; larghezza nominale 54 mm; prodotto Monouso</description>
+    <prices>
+      <price level="0">1500</price>
+      <price level="1">1500</price>
+    </prices>
+  </product>
+  <product id="control_natureold_3" code="8411134119438" name="Control Nature Profilattici 3 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Control Nature è il preservativo a cui non potete rinunciare. Lo spessore rende Control particolarmente resistente, mentre l’innovativa forma lo mantiene perfettamente aderente.</description>
+    <prices>
+      <price level="0">300</price>
+      <price level="1">300</price>
+    </prices>
+  </product>
+  <product id="control_natureold_6" code="8411134120403" name="Control Nature Profilattici 6 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Control Nature è il preservativo a cui non potete rinunciare. Lo spessore rende Control particolarmente resistente, mentre l’innovativa forma lo mantiene perfettamente aderente.</description>
+    <prices>
+      <price level="0">500</price>
+      <price level="1">500</price>
+    </prices>
+  </product>
+  <product id="control_naturexlold_6" code="8411134120311" name="Control Nature XL Profilattici 6 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Un preservativo sicuro in misura extralarge. Se cerchi dei preservativi di dimensioni etralarge, Control Adapta XL è il prodotto giusto per te. Pratico da indossare, è in lattice di gomma naturale, lubrificato e dotato di serbatoio. Efficace come metodo contraccettivo e per proteggerti da malattie trasmissibili tramite rapporto sessuale.</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="control_newforte_12" code="8411134140142" name="Control New Forte 12 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Maggiore spessore
+Lubrificazione ottimale
+Larghezza nominale 54 mm
+Materiale: lattice di gomma naturale
+Perfetta adattabilità</description>
+    <prices>
+      <price level="0">1600</price>
+      <price level="1">1600</price>
+    </prices>
+  </product>
+  <product id="control_newforte_6" code="8411134139641" name="Contro New Forte Profilattici 6 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Control Forte è il preservativo a cui non potete rinunciare. Lo spessore di 0,090 millimetri rende Control Forte particolarmente resistente, mentre linnovativa forma Adapta lo mantiene perfettamente aderente.</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="control_newfun_6" code="8411134140937" name="Control New Fun Mix Profilattici 6 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Contiene: 2 x Sensual Dots&amp;Lines + 2 x Finissimo Original + 2 x Nature Xtra Lube
+Larghezza nominale 54 mm
+Lubrificazione ottimale.
+Materiale: lattice di gomma naturale.
+Perfetta adattabilità</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="control_newnature_12" code="8411134138903" name="Control New Nature Profilattici 12 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Control New Nature è il preservativo a cui non potete rinunciare. Lo spessore rende Control particolarmente resistente, mentre l’innovativa forma lo mantiene perfettamente aderente.</description>
+    <prices>
+      <price level="0">1400</price>
+      <price level="1">1400</price>
+    </prices>
+  </product>
+  <product id="control_newnature_3" code="8411134138910" name="Control New Nature Profilattici 3 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Control New Nature è il preservativo a cui non potete rinunciare. Lo spessore rende Control particolarmente resistente, mentre l’innovativa forma lo mantiene perfettamente aderente.</description>
+    <prices>
+      <price level="0">400</price>
+      <price level="1">400</price>
+    </prices>
+  </product>
+  <product id="control_newnature_6" code="8411134138927" name="Control New Naure Profilattici 6 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Control New Nature è il preservativo a cui non potete rinunciare. Lo spessore rende Control particolarmente resistente, mentre l’innovativa forma lo mantiene perfettamente aderente.</description>
+    <prices>
+      <price level="0">800</price>
+      <price level="1">800</price>
+    </prices>
+  </product>
+  <product id="control_newpeach_6" code="8411134140418" name="Control New Peach Profilattici 6 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Anatomici e al dolce gusto di frutta, i profilattici Control Intense Fruit sono ideali per le tue notti d'amore romantiche e piccanti. Ciò che rende unici i preservativi aromatizzati Control è il delicato sapore della pesca.</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="control_newxl_12" code="8411134139610" name="Control New XL Profilattici 12 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Control Nature XL è un profilattico maggiore per dimensioni rispetto allo standard, caratterizzato da una speciale forma anatomica che lo rende più comodo da indossare. Garantisce inoltre la massima adattabilità anatomica aumentando la sensibilità.
+
+Confezione da 12 pz</description>
+    <prices>
+      <price level="0">1700</price>
+      <price level="1">1700</price>
+    </prices>
+  </product>
+  <product id="control_newxl_6" code="8411134139627" name="Control new XL Profilattici 6 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Control Nature XL è un profilattico maggiore per dimensioni rispetto allo standard, caratterizzato da una speciale forma anatomica che lo rende più comodo da indossare. Garantisce inoltre la massima adattabilità anatomica aumentando la sensibilità.</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="control_nonstopdotsandline_6" code="8411134140739" name="Control Non Stop Dots &amp; Line Profilattici 6 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Control Stimulation Non Stop Dots &amp; Lines preservativo con punti e striature posizionati all'esterno per offrire sensazioni intense.
+
+Confezione da 6 pezzi</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="control_nonstopretard_12" code="8411134140616" name="Control Non Stop Retard Profilattici 12 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Control Originals New Non Stop Retard è un preservativo lubrificato all'interno con una particolare sostanza ritardante.</description>
+    <prices>
+      <price level="0">1700</price>
+      <price level="1">1700</price>
+    </prices>
+  </product>
+  <product id="control_nonstopretard_6" code="8411134140753" name="Control Non Stop Retard Profilattici 6 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Control Originals New Non Stop Retard è un preservativo lubrificato all'interno con una particolare sostanza ritardante.
+</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="control_nonstopxtralines_6" code="8411134140197" name="Control Non Stop Xtra Lines Profilattici 6 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Control Non Stop Xtra Lines è il preservativo a cui non potete rinunciare. Lo spessore rende Control particolarmente resistente, consente una perfetta adattabilità rendendo il rapporto sessuale più soddisfacente.</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="control_pleasurebooster" code="8411134135612" name="Control Pleasure Booster Anello Vibrante" category="Sex Toys Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="30">
+    <description>Anello vibrante che fornisce un reciproco piacere durante il rapporto sessuale
+Può essere utilizzato con o senza profilattico
+Darà una stimolazione ai tuoi rapporti, grazie al suo design ergonomico
+Monouso con durata di 20 minuti</description>
+    <prices>
+      <price level="0">500</price>
+      <price level="1">500</price>
+    </prices>
+  </product>
+  <product id="control_pleasuredrops" code="8058664130221" name="Control Pleasure Drops 10 ml" category="Lubrificanti Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Control Vibrant Oil Pleasure Drops è un olio orgasmico con intenso effetto riscaldante e solleticante, aiuta ad aumentare la sensibilità delle zone intime.</description>
+    <prices>
+      <price level="0">1200</price>
+      <price level="1">1200</price>
+    </prices>
+  </product>
+  <product id="control_pleasuregel_aloe" code="8411134124319" name="Control Pleasure Gel Aloe 50 ml" category="Lubrificanti Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Control Pleasure Gel Aloe è un lubrificante intimo inodore con Aloe Vera. Delicato e inodore, contiene proprietà idratanti e rinfrescanti che aumenta il piacere ed offre ad entrambi i partner un'esperienza sessuale intensa.</description>
+    <prices>
+      <price level="0">900</price>
+      <price level="1">900</price>
+    </prices>
+  </product>
+  <product id="control_pleasuregel_nature" code="8411134125705" name="Control Pleasure Gel Nature 50 ml" category="Lubrificanti Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Control Pleasure Gel Nature è un lubrificante sviluppato per facilitare la penetrazione durante i rapporti sessuali permettendo così un maggior piacere e intensità. Control Pleasure Gel in base acquosa, rispettoso della fisiologia naturale. Non unge, non sporca e non macchia.</description>
+    <prices>
+      <price level="0">900</price>
+      <price level="1">900</price>
+    </prices>
+  </product>
+  <product id="control_pleasurevibes" code="8411134135605" name="Control Pleasure Vibes Anello Vibrante" category="Sex Toys Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="30">
+    <description>Anello vibrante per il piacere di coppia
+Utilizzabile con o senza preservativo
+Design ergonomico per lui e per lei
+Realizzato in silicone
+Batteria alcalina inclusa</description>
+    <prices>
+      <price level="0">500</price>
+      <price level="1">500</price>
+    </prices>
+  </product>
+  <product id="control_remotewireless" code="8411134133625" name="Control Remote Wireless" category="Sex Toys Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="100">
+    <description>Mini stimolatore wireless
+Discreto e resistente all'acqua
+Intensità variabile per piacevoli esperienze
+A forma di ovetto</description>
+    <prices>
+      <price level="0">3000</price>
+      <price level="1">3000</price>
+    </prices>
+  </product>
+  <product id="control_sensualdotsandlines_12" code="8411134140555" name="Control Sensual Dots &amp; Lines Profilattici 12 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Control Sensual Dots &amp; lines è un preservativo che offre una maggiore stimolazione grazie alla presenza di delicati punti e smagliature posizionati strategicamente sulla sua superficie. Permette anche una perfetta adattabilità (Tecnologia ADAPTA), rendendo più soddisfacente il tuo rapporto sessuale.</description>
+    <prices>
+      <price level="0">1700</price>
+      <price level="1">1700</price>
+    </prices>
+  </product>
+  <product id="control_sensualdotsandlines_6" code="8411134140838" name="Control Sensual Dots &amp; Lines Profilattici 6 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Control Stimulation Sensual Dots &amp; Lines è un preservativo che offre maggiore stimolazione grazie alla presenza di delicati rilievi e nervature posizionati sulla superficie.</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="control_sensualdotsandlineseasyway_6" code="8411134140852" name="Control Sensual Dots &amp; Lines Easy Way Profilattici 6 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Preservativi in lattice naturale. Con rilievi e striature, con applicatore Easy Way.</description>
+    <prices>
+      <price level="0">1100</price>
+      <price level="1">1100</price>
+    </prices>
+  </product>
+  <product id="control_sensualdotsline_2in1" code="8411134140531" name="Control 2 in 1 Sensual Dots &amp; Lines - 3 Profilattici + 3 Gel " category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Kit composto da preservativi + dose extra di lubrificante ideale per viaggi, feste, festival e prime relazioni sessuali.
+Forma anatomica (Adapta Technology) per rapporti sessuali più soddisfacenti.
+Preservativo in lattice di gomma naturale, colore trasparente e lubrificazione ottimale. Non utilizzare da persone allergiche al lattice. In caso di irritazione, interrompere l'uso e consultare il medico.</description>
+    <prices>
+      <price level="0">500</price>
+      <price level="1">500</price>
+    </prices>
+  </product>
+  <product id="control_sensualintensedots_12" code="8411134140906" name="Control Sensual Intense Dots Profilattici 12 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Punti conici
+Massimo piacere
+Larghezza nominale 52 mm
+Materiale: lattice di gomma naturale
+Vestibilità perfetta</description>
+    <prices>
+      <price level="0">1700</price>
+      <price level="1">1700</price>
+    </prices>
+  </product>
+  <product id="control_sensualintensedots_6" code="8411134140869" name="Control Sensual Intense Dots Profilattici 6 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>CONTROL Sensual Intense Dots Quando le sensazioni si moltiplicano, moltiplica il piacere. Grazie ai suoi rilievi conici distribuiti su tutta la superficie, Intense Dots offre stimolazioni inaspettate e intense durante il rapporto. Compatibile con l'uso di gel e lubrificanti a base acquosa o siliconica, è un prezioso alleato per esplorare nuove intensità di piacere</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="control_sensualmousse_borabora" code="8058664139637" name="Control Sensual Mousse Bora Bora 125 ml" category="Lubrificanti Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="45">
+    <description>Control Sensual Mousse Bora Bora è una mousse per massaggi che stimola i sensi e il corpo.</description>
+    <prices>
+      <price level="0">1200</price>
+      <price level="1">1200</price>
+    </prices>
+  </product>
+  <product id="control_sensualmousse_oceanwave" code="8058664130214" name="Control Sensual Mousse Ocean Wave 125 ml" category="Lubrificanti Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="45">
+    <description>Control Sensual Mousse Ocean Wave è una mousse per massaggi che stimola i sensi e il corpo.</description>
+    <prices>
+      <price level="0">1200</price>
+      <price level="1">1200</price>
+    </prices>
+  </product>
+  <product id="control_sensualxtradots_12" code="8411134140883" name="Control Sensual Xtra Dots Profilattici 12 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>ontrol Sensual Xtra Dots è un preservativo che offre un piacere superiore grazie alla collocazione strategica di 264 punti distribuiti sulla superficie dello stesso. Inoltre permette una vestibilità perfetta (Close Feel Technology) rendendo il tuo rapporto sessuale più soddisfacente. Una sensazione extra per entrambi. </description>
+    <prices>
+      <price level="0">1700</price>
+      <price level="1">1700</price>
+    </prices>
+  </product>
+  <product id="control_sensualxtradots_6" code="8411134140876" name="Control Sensual Xtra Dots Profilattici 6 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Control Stimulation Sensual Xtra Dots preservativo stimolante, che offre sensazioni intense ed eccitanti grazie a 264 punti in rilievo posizionati all'esterno.</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="control_signs_3" code="8411134131720" name="Control Signs Profilattici 3 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>3 preservativi natural
+Trasparente
+Idrata e con serbatoio</description>
+    <prices>
+      <price level="0">400</price>
+      <price level="1">400</price>
+    </prices>
+  </product>
+  <product id="control_signs_6" code="8058664060689" name="Control Signs Profilattici 6 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Profilattico lubrificato con elevata adattabilità.
+Forma adapta.
+Liscio, anatomico, trasparente, lubrificato, con serbatoio.
+Ampiezza nominale: 54 mm</description>
+    <prices>
+      <price level="0">800</price>
+      <price level="1">800</price>
+    </prices>
+  </product>
+  <product id="control_strawberry_12" code="8411134140609" name="Control Strawberry Profilattici 12 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Tutta la passione del profumo della fragola.
+Larghezza nominale 54 mm
+Colore rosso e ammortizzato.
+Materiale: lattice di gomma naturale.
+Perfetta adattabilità</description>
+    <prices>
+      <price level="0">1500</price>
+      <price level="1">1500</price>
+    </prices>
+  </product>
+  <product id="control_thaipassion_gel" code="8411134135810" name="Control Thai Passion Gel 200 ml" category="Lubrificanti Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Massimo piacere e divertimento nei momenti di sensualità con il gel per massaggio 2 in 1 Thai Passion di Control, il lubrificante aromatizzato per l’intimità di coppia. Realizzato interamente in Italia, il gel Thai Passion Control è composto da una base acquosa e non contiene parabeni né fenossietanolo e zuccheri. Presenta una colorazione trasparente e viene proposto in un pratico flacone da 200 ml. L’azione idratante e supersensoriale del gel Thai Passion 2 in 1 di Control né fa il prodotto perfetto per vivere al meglio momenti di intimità di coppia indimenticabili. La texture morbida e setosa è infatti studiata per garantire un’azione lubrificante arricchita dall’inconfondibile aroma floreale e speziato. Un mondo di sensazioni per favorire il benessere e l’equilibrio, ed esplorare nuovi territori di piacere. </description>
+    <prices>
+      <price level="0">1200</price>
+      <price level="1">1200</price>
+    </prices>
+  </product>
+  <product id="control_totalfit_6" code="8411134129819  " name="Control Total Fit Profilattici 6 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Total Fit con la sua forma speciale, offre una perfetta vestibilità e la massima adattabilità, favorendo un rapporto più piacevole.
+Control Total Fit è un profilattico in lattice di gomma naturale, della massima qualità, lascie , a lati paralleli, trasparente, lubrificato e con serbatoio.
+Larghezza Nominale 50,5 mm. Prodotto Monouso.
+
+I profilattici Control Adapta sono adatti come contraccettivi e proteggono dalle malattie sessualmente trasmissibili.</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="control_touchandfeel_2in1" code="8411134134356" name="Control Touch and Feel 2 in 1 - 3 Profilattici + 3 Gel" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Control 2 in 1 Touch &amp; Feel è un kit preservativo stimolante + lubrificante di Control.</description>
+    <prices>
+      <price level="0">500</price>
+      <price level="1">500</price>
+    </prices>
+  </product>
+  <product id="control_toycleaner" code="8058664130238" name="Control Toy Cleaner" category="Sex Toys Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Control Toys Cleaner Igienizzante Per Sex Toys.</description>
+    <prices>
+      <price level="0">700</price>
+      <price level="1">700</price>
+    </prices>
+  </product>
+  <product id="control_trion" code="8411134135629" name="Control Tri On" category="Sex Toys Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="55">
+    <description>Stimolatore per donna dal tocco setoso
+3 teste vibranti in silicone
+Stimolazione a intensità variabile
+Ricoperto in silicone impermeabile
+Compatibile con i gel Control</description>
+    <prices>
+      <price level="0">1200</price>
+      <price level="1">1200</price>
+    </prices>
+  </product>
+  <product id="control_ultrafeel_6" code="8411134129949" name="Control Ultra Feel Profilattici 6 pz" category="Profilattici Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Il profilattico più sottile della gamma Control. Ultra Feel è più sottile del 30% rispetto alla gamma standard per fornire la massima sensibilità ma con tutta la garanzia dei preservativi Control.</description>
+    <prices>
+      <price level="0">1100</price>
+      <price level="1">1100</price>
+    </prices>
+  </product>
+  <product id="control_velvetsecret" code="8411134131003" name="Control Velvet Secret" category="Sex Toys Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Mini stimolatore dal tocco setoso
+Forma composta da tre perle di silicone
+Intensità variabile per piacevoli esperienze
+Resistente all'acqua</description>
+    <prices>
+      <price level="0">1900</price>
+      <price level="1">1900</price>
+    </prices>
+  </product>
+  <product id="control_wildnature_gel" code="8058664099849" name="Control Wild Nature Gel 200 ml" category="Lubrificanti Control" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="60">
+    <description>Control Wild Nature 3in1 Gel Massaggio scatena momenti di travolgente passione grazia alla sua innovativa tripla azione massaggiante, lubrificante e stimolante. L’esclusivo tappo con 5 sfere amplifica l'effetto energizzante dell’aroma al tè nero.</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="durex_comfort_xxl_6" code="8056860820168" name="Durex Comfort XXL 6 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>I preservativi Durex XXL sono i più lunghi e ampi della gamma Durex. Offrono comfort agli uomini che necessitano di una misura maggiore rispetto ai preservativi XL.​</description>
+    <prices>
+      <price level="0">1100</price>
+      <price level="1">1100</price>
+    </prices>
+  </product>
+  <product id="durex_comfortxl_12" code="5038483444962" name="Durex Comfort XL Profilattici 12 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Durex Comfort XL Profilattici Extra Large è una confezione da 12 profilattici trasparenti e lubrificati in lattice di gomma naturale. Ideali per una piacevole sensazione di agio durante il rapporto.</description>
+    <prices>
+      <price level="0">1800</price>
+      <price level="1">1800</price>
+    </prices>
+  </product>
+  <product id="durex_comfortxl_6" code="5038483444979" name="Durex Comfort XL Profilattici 6 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Durex Comfort XL Profilattici Extra Large è una confezione da 6 profilattici trasparenti e lubrificati in lattice di gomma naturale. Ideali per una piacevole sensazione di agio durante il rapporto.
+
+</description>
+    <prices>
+      <price level="0">1100</price>
+      <price level="1">1100</price>
+    </prices>
+  </product>
+  <product id="durex_contattocomfort_12" code="5038483444986" name="Durex Contatto Comfort Profilattici 12 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Durex Contatto Comfort Profilattici è una confezione da 12 profilattici trasparenti, sottili e lubrificati in lattice di gomma naturale, ottimi per conservare le sensazioni del contatto naturale pelle contro pelle durante tutto il rapporto sessuale.</description>
+    <prices>
+      <price level="0">1800</price>
+      <price level="1">1800</price>
+    </prices>
+  </product>
+  <product id="durex_contattocomfort_4" code="5038483445006" name="Durex Contatto Comfort Profilattici 4 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Durex Contatto Comfort Profilattici è una confezione da 4 profilattici trasparenti, sottili e lubrificati in lattice di gomma naturale, ottimi per conservare le sensazioni del contatto naturale pelle contro pelle durante tutto il rapporto sessuale.</description>
+    <prices>
+      <price level="0">900</price>
+      <price level="1">900</price>
+    </prices>
+  </product>
+  <product id="durex_contattocomfort_6" code="5038483444993" name="Durex Contatto Comfort Profilattici 6 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Durex Pleasuremax Profilattici è una confezione da 6 profilattici trasparenti e lubrificati in lattice di gomma naturale con rilievi e nervature stimolanti interne ed esterne per lui e per lei.</description>
+    <prices>
+      <price level="0">1100</price>
+      <price level="1">1100</price>
+    </prices>
+  </product>
+  <product id="durex_defensor_12" code="8056860820465" name="Durex Defensor 12pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Durex Defensor sono profilattic con maggiore spessore edi extra lubrificati con forma Easy On per un maggiore comfort.</description>
+    <prices>
+      <price level="0">1800</price>
+      <price level="1">1800</price>
+    </prices>
+  </product>
+  <product id="durex_defensor_9" code="5038483447666" name="Durex Defensor Profilattici 9 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Durex Defensor Profilattici è una confezione da 9 profilattici con spessore raddoppiato e extra lubrificati in lattice di gomma naturale per offrire un elevato comfort durante i rapporti sessuali.</description>
+    <prices>
+      <price level="0">1400</price>
+      <price level="1">1400</price>
+    </prices>
+  </product>
+  <product id="durex_intense_6" code="8002910045661" name="Durex Intense Profilattici 6 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="20">
+    <description>Durex Intense Profilattici è una confezione da 6 profilattici trasparenti e lubrificati in lattice di gomma naturale, ideati per favorire il piacere di coppia. Profilattici sottili con rilievi, nervature e gel stimolanti.</description>
+    <prices>
+      <price level="0">1200</price>
+      <price level="1">1200</price>
+    </prices>
+  </product>
+  <product id="durex_intense_delight" code="5038483996010" name="Durex Intense Delight Minivibratore" category="Sex Toys Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="35">
+    <description>Durex Intense Delight Vibratore Stimolante è un mini-vibratore discreto dalle forti vibrazioni, che diventerà il tuo alleato sexy durante i preliminari.</description>
+    <prices>
+      <price level="0">1500</price>
+      <price level="1">1500</price>
+    </prices>
+  </product>
+  <product id="durex_intense_littledevil" code="5038483988343" name="Durex Intense Litte Devil  Anello Vibratore" category="Sex Toys Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="35">
+    <description>Durex Intense Little Devil è l’anello vibrante stimolante studiato per offrire fino a 30 minuti di divertimento e intrigante piacere a entrambi i partner.</description>
+    <prices>
+      <price level="0">800</price>
+      <price level="1">800</price>
+    </prices>
+  </product>
+  <product id="durex_intense_orgasmicgel" code="8410104881801" name="Durex Intense Gel 10 ml" category="Lubrificanti Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="35">
+    <description>Durex Intense Orgasmic Gel
+Stimolante femminile intensifica l'orgasmo femminile portando la partner all'apice del piacere sessuale. Un gioco erotico da sperimentare in coppia.</description>
+    <prices>
+      <price level="0">1300</price>
+      <price level="1">1300</price>
+    </prices>
+  </product>
+  <product id="durex_intense_purefantasy" code="8001443202855" name="Durex Intense Pure Fantasy Vibratore" category="Sex Toys Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Durex Intense Pure Fantasy è un elegante massaggiatore personale pensato per il puro piacere sessusale. Garantisce sesso più intenso e piacevole.</description>
+    <prices>
+      <price level="0">2500</price>
+      <price level="1">2500</price>
+    </prices>
+  </product>
+  <product id="durex_intense_vibrations" code="8001443109116" name="Durex Intense Vibrations" category="Sex Toys Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="20">
+    <description>Durex Intense Vibrations Anello Stimolante offre un modo fantastico per aumentare il piacere e l'intesa sessuale di entrambi i partner durante il sesso.</description>
+    <prices>
+      <price level="0">800</price>
+      <price level="1">800</price>
+    </prices>
+  </product>
+  <product id="durex_invisible_12" code="5052197049473" name="Durex Invisible Profilattici 12 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Durex Invisible Profilattici Ultra Sottili e Sensibili è una confezione da 12 profilattici trasparenti e lubrificati in lattice di gomma naturale che massimizza la sensibilità, offrendo al tempo stesso un alto livello di sicurezza e protezione.</description>
+    <prices>
+      <price level="0">2100</price>
+      <price level="1">2100</price>
+    </prices>
+  </product>
+  <product id="durex_invisible_6" code="5052197049442" name="Durex Invisible Profilattici 6 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Durex Invisible Profilattici Ultra Sottili e Sensibili è una confezione da 6 profilattici trasparenti e lubrificati in lattice di gomma naturale che massimizza la sensibilità, offrendo al tempo stesso un alto livello di sicurezza e protezione.</description>
+    <prices>
+      <price level="0">1300</price>
+      <price level="1">1300</price>
+    </prices>
+  </product>
+  <product id="durex_invisible_extralube_6" code="8056860820106" name="Durex Invisible Profilattici Extra Lubrificati 6 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>1 Confezione di Durex Invisible Extra Lube, da 6 profilattici
+Trasparenti e extra lubrificati
+Più sottili per massimizzare la sensibilità
+Larghezza nominale: 54 mm
+Testati elettronicamente uno ad uno</description>
+    <prices>
+      <price level="0">1300</price>
+      <price level="1">1300</price>
+    </prices>
+  </product>
+  <product id="durex_invisible_xl_6" code="8056860820021" name="Durex Invisible XL Profilattici 6 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Durex Invisible XL sono profilattici studiati per massimizzare la sensibilità e e offrire protezione e sicurezza ad un alto livello.</description>
+    <prices>
+      <price level="0">1300</price>
+      <price level="1">1300</price>
+    </prices>
+  </product>
+  <product id="durex_jeans_12" code="5038483445044" name="Durex Jeans Profilattici 12 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="35">
+    <description>Durex Jeans Profilattici è una confezione da 12 profilattici trasparenti e lubrificati in lattice di gomma naturale con forma Easy-on e serbatoio per maggiore comfort e vestibilità.</description>
+    <prices>
+      <price level="0">1400</price>
+      <price level="1">1400</price>
+    </prices>
+  </product>
+  <product id="durex_jeans_27" code="8056860821189" name="Durex Jeans Profilattici 27 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="65">
+    <description>Durex Jeans preservativi trasparenti e lubrificati in lattice di gomma naturale con forma Easy-on e serbatoio per maggiore comfort e vestibilità.</description>
+    <prices>
+      <price level="0">2000</price>
+      <price level="1">2000</price>
+    </prices>
+  </product>
+  <product id="durex_jeans_4" code="5038483445037" name="Durex Jeans Profilattici 4 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Durex Jeans Profilattici è una confezione da 4 profilattici trasparenti e lubrificati in lattice di gomma naturale con forma Easy-on e serbatoio per maggiore comfort e vestibilità.</description>
+    <prices>
+      <price level="0">700</price>
+      <price level="1">700</price>
+    </prices>
+  </product>
+  <product id="durex_jeans_6" code="5038483445020" name="Durex Jeans Profilattici 6 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Durex Jeans Profilattici è una confezione da 6 profilattici trasparenti e lubrificati in lattice di gomma naturale con forma Easy-on e serbatoio per maggiore comfort e vestibilità.</description>
+    <prices>
+      <price level="0">900</price>
+      <price level="1">900</price>
+    </prices>
+  </product>
+  <product id="durex_love_12" code="5038483445051" name="Durex Love Profilattici 12 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Durex Love Profilattici è una confezione da 12 profilattici trasparenti e lubrificati in lattice di gomma naturale, monouso e testati elettronicamente. Condom facili e veloci da indossare grazie alla forma Easy-On e al serbatoio che dà maggior comfort.</description>
+    <prices>
+      <price level="0">1400</price>
+      <price level="1">1400</price>
+    </prices>
+  </product>
+  <product id="durex_love_6" code="5038483445068" name="Durex Love Profilattici 6 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Durex Love Profilattici è una confezione da 6 profilattici trasparenti e lubrificati in lattice di gomma naturale, monouso e testati elettronicamente. Condom facili e veloci da indossare grazie alla forma Easy-On e al serbatoio che dà maggior comfort.</description>
+    <prices>
+      <price level="0">1300</price>
+      <price level="1">1300</price>
+    </prices>
+  </product>
+  <product id="durex_massage_aloe" code="8001443176163" name="Durex Massage 2 in 1 Aloe Vera" category="Lubrificanti Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>DOPPIO UTILIZZO: Può essere utilizzato come gel lubrificanre per ridurre la secchezza delle parti intime e come gel rilassante per massaggi su tutto il corpo
+A BASE D'ACQUA: La formula del gel lubrificante è a base d'acqua e non contiene profumo; si lava via facilmente, non lascia macchie e non unge
+COMPATIBILE CON: tutti i preservativi e sex toys Durex, per un piacere sicuro e intenso.</description>
+    <prices>
+      <price level="0">1100</price>
+      <price level="1">1100</price>
+    </prices>
+  </product>
+  <product id="durex_massage_guarana" code="5038483976418" name="Durex Massage 2 in 1 Guarana ml.200" category="Lubrificanti Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>DOPPIO UTILIZZO: Può essere utilizzato come gel lubrificanre per ridurre la secchezza delle parti intime e come gel rilassante per massaggi su tutto il corpo
+A BASE D'ACQUA: La formula del gel lubrificante è a base d'acqua e non contiene profumo; si lava via facilmente, non lascia macchie e non unge</description>
+    <prices>
+      <price level="0">1100</price>
+      <price level="1">1100</price>
+    </prices>
+  </product>
+  <product id="durex_massage_guaranaold" code="5038483957523" name="Durex Massage 2 in 1 Guaranà" category="Lubrificanti Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Gel lubrificante stimolante con Guaranà. 2 prodotti in 1: un gel per massaggi su tutto il corpo e un lubrificante che può essere applicato sulle parti intime esterne.</description>
+    <prices>
+      <price level="0">1100</price>
+      <price level="1">1100</price>
+    </prices>
+  </product>
+  <product id="durex_massage_ylang" code="5038483976395" name="Durex Massage 2 in 1 Ylang Ylang ml.200" category="Lubrificanti Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>DOPPIO UTILIZZO: Può essere utilizzato come gel lubrificanre per ridurre la secchezza delle parti intime e come gel rilassante per massaggi su tutto il corpo
+A BASE D'ACQUA: La formula del gel lubrificante è a base d'acqua e non contiene profumo; si lava via facilmente, non lascia macchie e non unge</description>
+    <prices>
+      <price level="0">1100</price>
+      <price level="1">1100</price>
+    </prices>
+  </product>
+  <product id="durex_natural_ultradelicato" code="8002910050801" name="Durex Naturals Ultra Delicato Gel Lubrificante 100 ml" category="Lubrificanti Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="35">
+    <description>Durex Naturals Gel Lubrificante Ultra Delicato prodotto a partire dal 100% di ingredienti di origine naturale, che lenisce i fastidi intimi.</description>
+    <prices>
+      <price level="0">1300</price>
+      <price level="1">1300</price>
+    </prices>
+  </product>
+  <product id="durex_naturals_idratante" code="8002910050924" name="Durex Naturals Gel Lubrificante Idratante 100ml" category="Lubrificanti Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="35">
+    <description>Durex Naturals Gel Lubrificante Idratante è prodotto col 100% di ingredienti di origine naturale, tra cui l'Acido Ialuronico. Dona un'idratazione a lunga durata.</description>
+    <prices>
+      <price level="0">1300</price>
+      <price level="1">1300</price>
+    </prices>
+  </product>
+  <product id="durex_naturals_pure" code="8002910045586" name="Durex Naturals Pure Gel Lubrificante 100 ml" category="Lubrificanti Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="35">
+    <description>Durex Naturals Intimate è un gel Lubrificante per intensificare l'orgasmo femminile, progettato per rendere i momenti intimi più confortevoli e naturalmente emozionanti.</description>
+    <prices>
+      <price level="0">1300</price>
+      <price level="1">1300</price>
+    </prices>
+  </product>
+  <product id="durex_nolatex_6" code="5052197024272" name="Durex No Latex Profilattici 6 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="35">
+    <description>Durex No Latex Profilattici Anallergici sono realizzati in un materiale tecnologicamente avanzato non in lattice, adatto per tutte le persone allergiche al lattice di gomma naturale.</description>
+    <prices>
+      <price level="0">1200</price>
+      <price level="1">1200</price>
+    </prices>
+  </product>
+  <product id="durex_performance_12" code="5038483445082" name="Durex Retard Profilattici 12 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Durex Performa Profilattici Ritardanti è una confezione da 12 profilattici trasparenti e lubrificati in lattice di gomma naturale con lo speciale lubrificante ritardante Performa contenente benzocaina al 5%, per prolungare il piacere.</description>
+    <prices>
+      <price level="0">1800</price>
+      <price level="1">1800</price>
+    </prices>
+  </product>
+  <product id="durex_performance_4" code="5038483445105" name="Durex Retard Profilattici 4 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Durex Performa Profilattici Ritardanti è una confezione da 6 profilattici trasparenti e lubrificati in lattice di gomma naturale con lo speciale lubrificante ritardante Performa contenente benzocaina al 5%, per prolungare il piacere.</description>
+    <prices>
+      <price level="0">900</price>
+      <price level="1">900</price>
+    </prices>
+  </product>
+  <product id="durex_performance_6" code="5038483445099" name="Durex Retard Profilattici 6 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Durex Performa Profilattici Ritardanti è una confezione da 6 profilattici trasparenti e lubrificati in lattice di gomma naturale con lo speciale lubrificante ritardante Performa contenente benzocaina al 5%, per prolungare il piacere.</description>
+    <prices>
+      <price level="0">1100</price>
+      <price level="1">1100</price>
+    </prices>
+  </product>
+  <product id="durex_play_inspiration" code="5038483744055" name="Durex Play Inspiration Vibratore" category="Sex Toys Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="3" depth="60">
+    <description>Durex Play Inspiration Massaggiatore Personale è un vibratore ricaricabile dal design elegante per una sensuale e intensa esperienza sensuale che offre fino a 4 ore di intenso piacere.</description>
+    <prices>
+      <price level="0">9900</price>
+      <price level="1">9900</price>
+    </prices>
+  </product>
+  <product id="durex_play_touch" code="5038483498286" name="Durex Play Touch Vibratore" category="Sex Toys Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="35">
+    <description>Durex Play Touch Stimolatore Vibrante offre fino a 20 minuti di morbido, sensuale e vibrante piacere</description>
+    <prices>
+      <price level="0">1050</price>
+      <price level="1">1050</price>
+    </prices>
+  </product>
+  <product id="durex_play_ultra" code="5038483498255" name="Durex Play Utra Anello Vibratore" category="Sex Toys Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="35">
+    <description>Durex Play Ultra Anello Stimolante Vibrante offre fino a 20 minuti di vibrante piacere a entrambi i partner. Farà scoprire una frizzante stimolazione extra per lei e sensazioni emozionanti per lui.</description>
+    <prices>
+      <price level="0">1050</price>
+      <price level="1">1050</price>
+    </prices>
+  </product>
+  <product id="durex_pleasure_cherry" code="5038483672280" name="Durex gel Ciliegia 50 ml" category="Lubrificanti Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="35">
+    <description>NUOVO lubrificante intimo delicato con un' esclusiva formula AROMATIZZATA ALLA CILIEGIA per dare piacere ai tuoi momenti intimi Particolarmente indicato in caso di secchezza vaginale Può essere utilizzato con i profilattici Durex </description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">10</price>
+    </prices>
+  </product>
+  <product id="durex_pleasure_eternal" code="5052197004113" name="Durex Eternal Connection 50ml" category="Lubrificanti Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="35">
+    <description>Dona una lubrificazione a lunga durata, per i disturbi intimi associati alla secchezza vaginale e per il sesso anale
+Adatto a sesso vaginale, anale e orale
+Adatto all'utilizzo con preservativi in lattice di gomma naturale, poliisoprene e poliuretano
+Adatto all'utilizzo con i sex toys</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="durex_pleasure_feel" code="5038483242056" name="Durex Play Feel Pleasure Gel 50ml" category="Lubrificanti Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="35">
+    <description>GEL LUBRIFICANTE CLASSICO: rende il sesso piacevolmente fluido e intenso. È indicato in caso di secchezza vaginale.
+A BASE D'ACQUA: la formula di Durex a base acquosa contribuisce a fornire un'idratazione costante mantenendo l'equilibrio del pH</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="durex_pleasure_fresh" code="5038483242148" name="Durex Fresh Gel Lubrificante 50 ml" category="Lubrificanti Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="35">
+    <description>Durex Fresh è un gel lubrificante indicato in caso di secchezza vaginale. Gel lubrificante a base acquosa che non macchia, offre un piacevole effetto fresco, sollecitando i sensi di entrambi i partner per un'esperienza sessuale intensa.</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="durex_pleasure_hot" code="5038483242117" name="Durex Gel Hot 50 ml" category="Lubrificanti Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="35">
+    <description>Sviluppa una fantastica sensazione di calore, che aumenta se si soffia leggermente dove applicato 
+Si lava via facilmente con l'acqua 
+Si può usare con il profilattico 
+Sapore piacevolmente dolce 
+Facile e pulito, grazie al comodo erogatore</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="durex_pleasure_realfeel" code="5052197035636" name="Durex Pleasure Gel Real Feel 50 ml" category="Lubrificanti Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="35">
+    <description>REAL FEEL PLEASURE GEL Setoso e con una piacevole sensazione di calore al contatto con la pelle. Grazie alla base siliconica dura più a lungo e basta una piccola quantità per regalarti un'intesa più profonda e naturale.</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="durex_pleasure_strawberry" code="5052197043105" name="Durex Pleasure Gel Fragola 50ml" category="Lubrificanti Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="35">
+    <description>Il nuovo pleasure gel al gusto di fragola per offrirti piacevoli e divertenti esperienze intime. Usane quanto ne vuoi tutte le volte che vuoi! Compatibile con il lattice del profilattico.</description>
+    <prices>
+      <price level="0">1000</price>
+      <price level="1">1000</price>
+    </prices>
+  </product>
+  <product id="durex_pleasuremax_10" code="8056860821042" name="Durex Pleasuremax Profilattici 10 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>I profilattici Durex Pleasure Max sono ideati per il piacere di entrambi i partner presentano rilievi e nervature stimolanti con forma Easy On.</description>
+    <prices>
+      <price level="0">1500</price>
+      <price level="1">1500</price>
+    </prices>
+  </product>
+  <product id="durex_pleasuremax_6" code="5038483445129" name="Durex Pleasuremax Profilattici 6 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Durex Pleasuremax Profilattici è una confezione da 6 profilattici trasparenti e lubrificati in lattice di gomma naturale con rilievi e nervature stimolanti interne ed esterne per lui e per lei.</description>
+    <prices>
+      <price level="0">1100</price>
+      <price level="1">1100</price>
+    </prices>
+  </product>
+  <product id="durex_pleasurering" code="5052197050004" name="Durex Pleasure Ring Anello Stimolante 1 pz" category="Sex Toys Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Durex Pleasure Ring Anello Stimolante rende l'erezione più intensa più a lungo. Da sperimentare per stimolare e stuzzicare il massimo divertimento.</description>
+    <prices>
+      <price level="0">700</price>
+      <price level="1">700</price>
+    </prices>
+  </product>
+  <product id="durex_realfeel_6" code="5052197024180" name="Durex Real Feel Profilattici 6 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Durex Real Feel Profilattici è una confezione da 6 profilattici trasparenti e lubrificati in polisoprene realizzati in lattice di gomma sintetica per offrire una sensazione naturale di contatto sulla pelle.</description>
+    <prices>
+      <price level="0">1200</price>
+      <price level="1">1200</price>
+    </prices>
+  </product>
+  <product id="durex_realfeelold_6" code="5052197024159" name="Durex Real Feel  Profilattici 6 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>DUREX REAL FEEL e' un profilattico rivoluzionario di ultimissima generazione. Diversamente dai profilattici tradizionali fabbricati con lattice naturale, durex real feel e' stato realizzato con un nuovissimo materiale costituito di lattice di gomma sintetica che lo rende ultra sottile, solo 0.030 mm di spessore.</description>
+    <prices>
+      <price level="0">1200</price>
+      <price level="1">1200</price>
+    </prices>
+  </product>
+  <product id="durex_settebello_12" code="5038483445174" name="Durex Settebello Profilattici 12 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Durex Settebello Classico Profilattici è una confezione da 12 profilattici trasparenti e lubrificati in lattice di gomma naturale. Rappresenta l’originale e classico profilattico di Durex.</description>
+    <prices>
+      <price level="0">1400</price>
+      <price level="1">1400</price>
+    </prices>
+  </product>
+  <product id="durex_settebello_18" code="5038483445167" name="Durex Settebello Profilattici 18 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="65">
+    <description>Durex Settebello Classico Profilattici è una confezione da 18 profilattici trasparenti e lubrificati in lattice di gomma naturale. Rappresenta l’originale e classico profilattico di Durex.</description>
+    <prices>
+      <price level="0">1900</price>
+      <price level="1">1900</price>
+    </prices>
+  </product>
+  <product id="durex_settebello_3" code="5038483445150" name="Durex Settebello Profilattici 3 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Durex Settebello Classico Profilattici è una confezione da 3 profilattici trasparenti e lubrificati in lattice di gomma naturale. Rappresenta l’originale e classico profilattico di Durex.
+
+</description>
+    <prices>
+      <price level="0">500</price>
+      <price level="1">500</price>
+    </prices>
+  </product>
+  <product id="durex_settebello_5" code="5038483445198" name="Durex Settebello Profilattici 5 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Durex Settebello Classico Profilattici è una confezione da 5 profilattici trasparenti e lubrificati in lattice di gomma naturale. Rappresenta l’originale e classico profilattico di Durex.</description>
+    <prices>
+      <price level="0">800</price>
+      <price level="1">800</price>
+    </prices>
+  </product>
+  <product id="durex_settebello_6" code="5038483445181" name="Durex Settebello Profilattici 6 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Durex Settebello Classico Profilattici è una confezione da 6 profilattici trasparenti e lubrificati in lattice di gomma naturale. Rappresenta l’originale e classico profilattico di Durex.</description>
+    <prices>
+      <price level="0">900</price>
+      <price level="1">900</price>
+    </prices>
+  </product>
+  <product id="durex_settebelloold_12" code="8004373032622" name="Durex Settebello Classico Profilattici 6 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Durex Settebello Classico Profilattici è una confezione da 12 profilattici trasparenti e lubrificati in lattice di gomma naturale. Rappresenta l’originale e classico profilattico di Durex.</description>
+    <prices>
+      <price level="0">1350</price>
+      <price level="1">1350</price>
+    </prices>
+  </product>
+  <product id="durex_sync_12" code="5052197044850" name="Durex Sync Profilattici 12 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Ritardante per lui, per favorire il piacere di coppia
+Preservativo con rilievi, nervature e il lubrificante Performa per un'intensa esperienza di coppia
+Sync è un profilattico ideato per la coppia, in grado di sincronizzare il piacere reciproco ristabilendo gli equilibri in amore</description>
+    <prices>
+      <price level="0">1800</price>
+      <price level="1">1800</price>
+    </prices>
+  </product>
+  <product id="durex_sync_6" code="5052197003925" name="Durex Sync Profilattici 6 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Durex Sync Profilattici Ritardanti è una confezione da 6 profilattici trasparenti e lubrificati in lattice di gomma naturale con crema ritardante con il 5% di benzocaina. Ideati per favorire il piacere di coppia: ritardanti per lui, stimolante per lei.</description>
+    <prices>
+      <price level="0">1200</price>
+      <price level="1">1200</price>
+    </prices>
+  </product>
+  <product id="durex_tropical_6" code="5038483445235" name="Durex Topical Mix Profilattici 6 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Durex Tropical Profilattici Aromatizzati è una confezione da 6 profilattici trasparenti e lubrificati in lattice di gomma naturale. Aromatizzati ai gusti di frutta: arancia, banana, fragola e mela.</description>
+    <prices>
+      <price level="0">1100</price>
+      <price level="1">1100</price>
+    </prices>
+  </product>
+  <product id="durex_tvb_6" code="5052197007084" name="Durex TVB Profilattici 6 pz" category="Profilattici Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="25">
+    <description>Durex TVB Profilattici è una confezione da 6 profilattici trasparenti e lubrificati in lattice di gomma naturale che rende speciali e indimenticabili i primi amori.</description>
+    <prices>
+      <price level="0">900</price>
+      <price level="1">900</price>
+    </prices>
+  </product>
+  <product id="pic_testgravidanza_1" code="8058090004332" name="Pic Test di Gravidanza 1 pz" category="Test PIC" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Test diagnostico rapido da eseguire a casa in totale autonomia, in grado di stabilire se vi è una gravidanza in corso individuando nell’urina la presenza o meno dell’ormone della gravidanza hCG.</description>
+    <prices>
+      <price level="0">1500</price>
+      <price level="1">1500</price>
+    </prices>
+  </product>
+  <product id="gaviscon_gavirepair10" code="8056860820274" name="Gavirepair 10 ml 20 bustine" category="Gaviscon" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="55">
+    <description>Triplice azione: protettiva favorente la riparazione, emolliente e di conseguenza anti-irritativa e lubrificante.
+L’acido ialuronico grazie alle sue proprietà di immagazzinare l’acqua crea un film protettivo sulla mucosa esofagea che ne favorisce di conseguenza i processi di riparazione
+Il complesso vegetale grazie all’azione emolliente contribuisce a ridurre l’irritazione della mucosa esofagea
+L’effetto filmante di ￼ favorisce l’azione lubrificante
+Non contiene glutine.
+Gavirepair è un dispositivo medico CE0476. Leggere attentamente le avvertenze e le istruzioni per l’uso. Autorizzazione del 05.08.2021.</description>
+    <prices>
+      <price level="0">2000</price>
+      <price level="1">2000</price>
+    </prices>
+  </product>
+  <product id="durex_sensilube" code="8002910046972" name="Durex Sensilube Gel 40 ml" category="Lubrificanti Durex" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Idrata e lenisce la secchezza nelle zone intime, ridonando comfort
+È stato specificamente progettato per essere vicino alla naturale lubrificazione del vostro corpo
+Idratante e confortevole
+Incolore e indolore
+Conservare in luogo fresco e asciutto e lontano dalla portata del sole</description>
+    <prices>
+      <price level="0">1500</price>
+      <price level="1">1500</price>
+    </prices>
+  </product>
+  <product id="veet_striscecorpo" code="8056860820526" name="Veet Strisce Ipoallergeniche Corpo 16 pz" category="Veet" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="30">
+    <description>FORMULA IPOALLERGENICA- Con il 50% in meno di ingredienti chimici rispetto alle altre strisce Veet, queste sono adatte anche alle pelli più sensibili e minimizzano il rischio di reazioni allergiche
+RIMUOVONO I PELI ALLA RADICE- al contrario dei rasoi, le strisce depilatorie Veet rimuovono i peli alla radice, fornendo risultati duraturi, fino a 28 giorni
+ADERISCONO ANCHE AI PELI PIÙ CORTI- e non alla pelle, lasciandola idratata ed esfoliata
+PRONTE ALL'USO - le strisce arrivano incollate 2 a 2 e non è necessario strofinarle prima di separarle
+FACILI DA UTILIZZARE- basta separare le strisce, applicarle sulla pelle nella direzione di crescita dei peli, strofinare ripetutamente e strappare in direzione opposta</description>
+    <prices>
+      <price level="0">700</price>
+      <price level="1">700</price>
+    </prices>
+  </product>
+  <product id="veet_strisceviso" code="8056860820540" name="Veet Strisce Ipoallergeniche Viso 16 pz" category="Veet" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="30">
+    <description>FORMULA IPOALLERGENICA- Con il 50% in meno di ingredienti chimici rispetto alle altre strisce Veet, queste sono adatte anche alle pelli più sensibili e minimizzano il rischio di reazioni allergiche
+RIMUOVONO I PELI ALLA RADICE- al contrario dei rasoi, le strisce depilatorie Veet rimuovono i peli alla radice, fornendo risultati duraturi, fino a 28 giorni
+ADERISCONO ANCHE AI PELI PIÙ CORTI- e non alla pelle, lasciandola idratata ed esfoliata
+PRONTE ALL'USO - le strisce arrivano incollate 2 a 2 e non è necessario strofinarle prima di separarle
+FACILI DA UTILIZZARE- basta separare le strisce, applicarle sulla pelle nella direzione di crescita dei peli, strofinare ripetutamente e strappare in direzione opposta</description>
+    <prices>
+      <price level="0">700</price>
+      <price level="1">700</price>
+    </prices>
+  </product>
+  <product id="veet_strisceascelle" code="8056860820502" name="Veet Strisce Ipoallergeniche Ascelle 16 pz" category="Veet" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="30">
+    <description>Formula in gel Easy-Gel: aderisce ai peli più corti, non alla pelle, 1,5 mm, rimuove i peli alla radice, per una pelle liscia fino a 28 giorni. Garantisce ottimi risultati fin dal primo utilizzo, anche per chi non ha mai provato le strisce depilatorie. Queste strisce sono state studiate per permettere l’utilizzo su aree delicate e di piccole dimensioni come le ascelle.</description>
+    <prices>
+      <price level="0">700</price>
+      <price level="1">700</price>
+    </prices>
+  </product>
+  <product id="steradent_express60" code="3059946316383" name="Steradent Express 60 compresse" category="Steradent" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Compresse effervescenti adatte alla pulizia delle protesi dentarie.
+Elimina la placca ed esercita un'azione antibatterica fino a 12 ore.
+Dona una sensazione di freschezza.
+Le parti metalliche della dentiera, grazie alla loro formula anticorrosione, rimangono sempre lucenti.
+1 Confezione da 60 Compresse da conservare in un luogo fresco e asciutto.</description>
+    <prices>
+      <price level="0">900</price>
+      <price level="1">900</price>
+    </prices>
+  </product>
+  <product id="steradent_express90" code="3059946240633" name="Steradent Express 90 compresse" category="steradent" age-restricted="false" sellable="true" sellable-via-otc="true" corrispettivi="true" width="1" depth="40">
+    <description>Compresse effervescenti adatte alla pulizia delle protesi dentarie.
+Elimina la placca ed esercita un'azione antibatterica fino a 12 ore.
+Dona una sensazione di freschezza.
+Le parti metalliche della dentiera, grazie alla loro formula anticorrosione, rimangono sempre lucenti.
+1 Confezione da 90 Compresse da conservare in un luogo fresco e asciutto.</description>
+    <prices>
+      <price level="0">1200</price>
+      <price level="1">1200</price>
+    </prices>
+  </product>
+</catalogue>

@@ -1,0 +1,71 @@
+
+<div class="container-fluid">
+
+<div class="card">
+<form name="catalogo_esercente" action="?page=modifica_catalogo_esercente" method="post"> 
+              <div class="row">
+                     <label for="iva_id" class="col-sm-1 col-form-label text-end">Seleziona la macchina</label>
+                     <div class="col-sm-3">
+                            <select name="macchina_id" id="macchina_id" class="form-select" aria-label="Default select example">
+                                 <option value="0">SELEZIONA</option>
+                                    <?php foreach( $elenco_macchine as $row_macchina) {
+                                                            $id_macchina = $row_macchina["id"];  
+                                                            $matricola =  $row_macchina["matricola"];
+                                                            $tipologia_id_macchina =  $row_macchina["tipologia_id"];
+
+                                                            if ($id_macchina == $_POST['macchina_id']) {
+                                                                $selected = "selected";
+                                                            } else {
+                                                                $selected = "";
+                                                            }
+                                    ?>
+                                        <option <?= $selected; ?> value="<?= $id_macchina; ?>"><?= $matricola; ?></option>
+                                    <?php } ?>                 
+                              </select>
+                    </div>
+
+                    <label for="iva_id" class="col-sm-1 col-form-label text-end">Descr. prodotto:</label>
+                     <div class="col-sm-2">
+                        <input name="nomeProdotto" id="nomeProdotto" value="<?= $nomeProdotto; ?>" class="form-control" type="text"  placeholder="Inserisci nome prodotto" autofocus >
+                    </div>
+
+
+                    <div class="col-sm-2">
+                        <button type="submit" class="btn btn-success ">RICERCA</button>
+                    </div>
+</form>
+                    <div class="col-sm-1">
+                        <a href="?page=modifica_catalogo_esercente" class="btn btn-danger">RESET FILTRI</a>
+                    </div>
+
+                  <!--   <div class="col-sm-1">
+                        <form name="crea_json" action="?page=crea_json_catalogo_esercente" method="post"> 
+                                <input type="hidden" name="id_macchina_json" id="id_macchina_json" value="" />                         
+                        
+                                <button type="submit" class="btn btn-warning">CREA JSON</button>
+                                
+                        </form>
+                    </div> -->
+                </div>
+               
+                            
+                
+
+    </div> 
+    <script  src="https://code.jquery.com/jquery-3.6.1.min.js"  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>    
+    <div class="card">
+        <?php  
+            echo $xcrud->render(); 
+        ?>
+    </div> 
+</div>
+
+<script>
+    $('#macchina_id').on("change", function () {
+        let id_macchina = $(this).val();
+        $("#id_macchina_json").val(id_macchina);
+        
+
+    }); 
+</script>
+

@@ -1,0 +1,68 @@
+  <div class="bg-light  d-flex flex-row align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div class="clearfix">
+              <h1 class=" text-center">CARICO CATALOGO - GENERALE</h1>
+              <br />
+              <p  class=" text-center text-danger">Le immagini vanno caricate via FTP nella cartella app/immaginiprodotti</p>
+            </div>
+              
+          </div>
+           <form name="catalogo" action="?page=carica_catalogo_generale_insert" method="post" enctype="multipart/form-data"> 
+
+           <div class="mb-3 row">
+                     <label for="iva_id" class="col-sm-2 col-form-label">Seleziona la tipologia</label>
+                     <div class="col-sm-6">
+                            <select name="id_tipologia" id="id_tipologia" class="form-select" aria-label="Default select example">
+                                 <option value="0">SELEZIONA</option>
+                                    <?php foreach(  $dati_tipologie  as $row_tipologia) {
+                                                            $id_tipologia = $row_tipologia["id"];  
+                                                            $descrizione =  $row_tipologia["descrizione"];
+                                                            
+                                    ?>
+                                        <option value="<?= $id_tipologia; ?>"><?= $descrizione; ?></option>
+                                    <?php } ?>                 
+                              </select>
+                    </div>
+                </div>
+
+          
+              
+                <div class="mb-3 row">
+                    <label for="immagine_da_sostituire" class="col-sm-2 col-form-label">Seleziona FILE XML</label>
+                    <div class="col-sm-6">
+                        <input type="file" class=" form-control" id="allegato" name="allegato[]" accept="xml">
+                    </div>
+                </div>
+                
+              
+               
+                     <div class="row">
+                         <div class="col-6 text-end" >
+                            <button type="submit" class="btn btn-success col-6 ">CREA CATALOGO GENERALE</button>
+                        </div>
+                    </div>
+              
+                
+            </form>
+        </div>
+      </div>
+    </div>
+ <script  src="https://code.jquery.com/jquery-3.6.1.min.js"  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+	
+<script>
+ 
+ 
+/* $(document).on('submit',function(){
+    let id_tipologia_macchina = $('#id_tipologia_macchina').val();
+      
+                    if ( id_tipologia_macchina === '' ){
+                        alert('devi selezionare una tipologia di macchina!');
+                        return false;
+                    }
+}); */
+
+
+    
+</script><!-- comment -->

@@ -1,0 +1,304 @@
+  <div class="bg-light  d-flex flex-row align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div class="clearfix">
+              <h1 class=" text-center">GESTIONE VETRINA - MACCHINA</h1>
+              <br />
+             
+            </div>
+              
+          </div>
+           <form name="vetrina" action="?page=vetrina_assegna_prodotto_insert" method="post"> 
+                <div class="mb-4 row">
+                     <label for="iva_id" class="col-sm-2 col-form-label">Seleziona la macchina</label>
+                        <div class="col-sm-6">
+                                <select name="macchina_matricola" id="macchina_matricola" class="form-select" aria-label="Default select example">
+                                    <option value="0">SELEZIONA</option>
+                                        <?php foreach( $elenco_macchine as $row_macchina) {
+                                                                $id_macchina = $row_macchina["id"];  
+                                                                $matricola =  $row_macchina["matricola"];
+                                                                $tipologia_id_macchina =  $row_macchina["tipologia_id"];
+                                        ?>
+                                            <option value="<?= $id_macchina.','.$matricola; ?>">Matr: <?= $matricola; ?></option>
+                                        <?php } ?>                 
+                                </select>
+                        </div>
+                </div>
+
+                <div class="mb-4 row">
+                     <label for="iva_id" class="col-sm-2 col-form-label">Seleziona il prodotto</label>
+                        <div class="col-sm-6">
+                                <select name="id_prodotto" id="id_prodotto" class="form-select">
+                                    <option value="0">SELEZIONA</option>
+                                        <?php foreach( $catalogo_prodotti as $row_prodotto) {
+                                                                $id_prodotto = $row_prodotto["id"];  
+                                                                $titolo =  $row_prodotto["titolo"];
+                                                                $codice_a_barre =  $row_prodotto["codice_a_barre"];
+                                        ?>
+                                            <option value="<?= $id_prodotto; ?>"><?= $titolo.' '.$codice_a_barre; ?></option>
+                                        <?php } ?>                 
+                                </select>
+                        </div>
+                </div>
+
+                <div class="mb-4 row">
+                     <label for="iva_id" class="col-sm-2 col-form-label">Prodotto multicanale?</label>
+                        <div class="col-sm-6">
+                                <select name="multi_canale" id="multi_canale" class="form-select">
+                                        <option value="0">NO</option>
+                                        <option value="1">SI</option>             
+                                </select>
+                        </div>
+                </div>
+
+                <div class="row justify-content-center" id="vetrina_canali"></div>
+
+               
+
+                <div class="mb-4 row" style="margin-top: 15px;">
+                     <label for="iva_id" class="col-sm-2 col-form-label">Seleziona il canale (libero)</label>
+                        <div class="col-sm-6">
+                            <select name="alias_canale" id="alias_canale" class="form-select">
+                                          
+                              </select>
+                        </div>
+                </div>
+
+                <div class="mb-4 row d-none"  id="div_canali_da_occupare">
+                     <label for="iva_id" class="col-sm-2 col-form-label">Larghezza?</label>
+                        <div class="col-sm-6" data-tip="Inserisci il numero totale di canali che il prodotto deve occpuare">
+                            <input type="number" name="numero_di_canali" id="numero_di_canali" class="form-control" data-coreui-toggle="tooltip" data-coreui-placement="top" title="Tooltip on top" />
+                        </div>
+                </div>
+
+
+
+            
+                     <div class="row">
+                        <div class="col-6 text-end" >
+                            <button type="submit" id="button_inserimento" class="btn btn-success col-6" style="color: #FFFFFF;">ASSEGNA PRODOTTO AL CANALE</button>
+                        </div>
+                    </div>
+              
+                
+            </form>
+        </div>
+      </div>
+    </div>
+ <script  src="https://code.jquery.com/jquery-3.6.1.min.js"  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+	
+<script>
+$(document).ready(function() {
+    $('#id_prodotto').select2();
+    // pulisco da eventuali altri dati precedenti
+    localStorage.removeItem("canaliLiberi");
+
+  
+});
+ 
+$(document).on('submit',function(){
+    // split valori
+    let dati_macchina = $('#macchina_matricola').val().split(',') ;
+
+    let matricola_macchina =  dati_macchina[1];
+
+
+   // let macchina_matricola = $('#macchina_matricola').val();
+    let id_prodotto = $('#id_prodotto').val();
+    let alias_canale = $('#alias_canale').val();
+    let multi_canale = $('#multi_canale').val();
+    let numero_di_canali = $('#numero_di_canali').val();
+    
+      
+                    if ( macchina_matricola == 0 || id_prodotto == 0 || !alias_canale){
+                        alert('Matricola macchina '+ matricola_macchina +' - Prodotto '+ id_prodotto + ' e Canale '+ alias_canale +' sono Obbligatori!');
+                        return false;
+                    }
+
+                    if ( multi_canale > 0 && !numero_di_canali ){
+                        alert('Stai inserendo un prodotto multicanale - devi inserie un valore in numero di canali!');
+                        return false;
+                    }
+
+});
+
+
+$('#numero_di_canali').on("blur", function (event) {
+
+
+    let canaliLiberi = localStorage.getItem("canaliLiberi");
+    let arr = $.parseJSON(canaliLiberi);
+
+    let righeCanali = localStorage.getItem("righeCanali");
+    let arrRighe = $.parseJSON(righeCanali);
+
+    let numero_canali_da_occupare = Number( $(this).val() );
+    let primo_canale_dal_quale_partire = Number ( $('#alias_canale').val() ); 
+    let contaCanali = 1;
+    let contaRighe = 1;
+    // Array con i soli canali da testare
+    let canali_in_sequenza = [];
+    // stessa logica per le righe
+    let righeCanaliAbinate = [];
+
+    if ( numero_canali_da_occupare <= 1) {
+      alert ('Numero canali deve essere superiore a 1');
+      return false;
+    }
+
+  //  console.log('PRIMO CANALE = ' + primo_canale_dal_quale_partire);
+
+    
+    $.each(arr, function (index, value) {
+      // Inserisco nell'array i soli canali da controllare 
+        if ( value >= primo_canale_dal_quale_partire ) {
+           
+            if ( contaCanali <= numero_canali_da_occupare ) {
+              console.log('Canale inserito -> '+ value);
+              canali_in_sequenza.push(value);
+
+          //   iN QUESTO CASO USO arrRighe che è il parseJson per prendere il valore riga corrispondente all'indice del canale
+                righeCanaliAbinate.splice(index, 0, arrRighe[index] );
+        
+              contaCanali++ ;
+
+            }
+        }
+        
+    });
+
+//     console.log(righeCanaliAbinate);
+
+        var results = [];
+        var limit   = canali_in_sequenza.length - 1 ; 
+
+        var sequence = 0;
+        for (var i = 0; i < limit; ++i) {
+          var diff = canali_in_sequenza[ i + 1 ] - canali_in_sequenza[ i ];
+          var diffRiga = righeCanaliAbinate[ i + 1 ] - righeCanaliAbinate[ i ];
+          if ( diff != 1) {
+            alert('CANALI NON IN SEQUENZA');
+            $('#numero_di_canali').val('');
+            return false;
+          }
+
+          if ( diffRiga != 0) {
+            alert('RIGA DEI CANALI NON IN SEQUENZA');
+            $('#numero_di_canali').val('');
+            return false;
+          }
+
+
+        }
+}); // END CONTROLLO CANALI E RIGHE CONSECUTIVI
+
+
+
+$('#multi_canale').on("change", function (event) {
+    let multi_canale =  $(this).val();
+    if (multi_canale == 1) {
+        // nascondo il div selezione canale
+        $('#div_canali_da_occupare').removeClass('d-none');
+        
+    }  else {
+        $('#div_canali_da_occupare').addClass('d-none');
+        $('#numero_di_canali').val('');
+        
+    }
+});
+
+$('#macchina_matricola').on("change", function (event) {
+    
+    // split valori
+    let dati_macchina = $(this).val().split(',') ;
+
+    let matricola_macchina =  dati_macchina[1];
+
+    if (!matricola_macchina ) {
+        alert ('Devi prima selezionare una macchina!');
+        return false;
+    } else {
+        let id_esercente = <?= $utente; ?>;
+
+        //prendo i canali liberi per quella macchina
+        $.ajax({   
+                    url: "../public/api/lista_canali_abilitati_per_matricola_macchina.php",
+                    data: { ide: id_esercente, matr: matricola_macchina},
+                    type: 'GET',
+                    dataType: 'json',
+                    success: function (data) { 
+                      var dati_option = "";
+                      // svuoto i canali
+                      $("#alias_canale").html('');
+                      dati_option += "<option value='0'>SELEZIONA</option>";
+                      // array dei canali liberi
+                        let canali_liberi = [];
+                      // righe
+                        let righe_canali = [];
+                        let vetrina =  $("#vetrina_canali").html('<h3 class="text-center">LISTA CANALI</h3>');
+                        let classe = '';
+                       
+                    for (i = 0; i < data.length; ++i) {   
+                        let alias =  data[i].alias;
+                        let canale = data[i].canale;
+                        let stato = data[i].stato;
+                        let prodotto = data[i].prodotto_id;
+                        let riga = data[i].riga;
+                      
+                            // creo vetrina canali
+                           
+                              if ( stato == 'Abilitato' && prodotto == null) {
+                                 classe = 'bg-success';
+                              } else {
+                                 classe = 'bg-danger';
+                              }
+
+
+                              vetrina = '<div style="margin: 2px;" class="text-center col-1 '+ classe + '">' + canale + '<br /><small>' + alias +  '</small></div>';
+                              $("#vetrina_canali").append( vetrina );
+                            
+                              if ( i > 0 && i < data[0].length -1 ) {
+                                  if ( data[0][i + 1].riga != data[0][i].riga) {
+                                    vetrina = '<div class="row"></div>';
+                                    $("#vetrina_canali").append( vetrina );
+                                  }
+                              }
+
+                      
+                         
+
+                            // Carico i canali abilitati nella select  
+                            if ( stato == 'Abilitato' && prodotto == null ) {
+                                dati_option += "<option value=" + canale + ">Alias: " + alias + " Canale: " + canale + "</option>"; 
+                               
+                                // Scrivo array con i soli canali buoni 
+                                canali_liberi.push(canale);
+                                // ed anche le righe
+                                righe_canali.push(riga);
+
+                                // CARICO LA VETRINA CON I SOLI CANALI LIBERI
+
+                            }
+
+                        } // END FOR DATA
+
+                        $("#vetrina_canali").append( '</div>' );
+                            // scrivo array canali liberi
+                            localStorage.setItem("canaliLiberi", JSON.stringify(canali_liberi));
+                            localStorage.setItem("righeCanali", JSON.stringify(righe_canali));
+
+
+                            $("#alias_canale").append( dati_option );
+                    },
+                        error:function(){
+                            alert('ATTENZIONE ERRORE DATI CANALI ALIAS');
+                            return false;
+                        }
+            }); // END CARICAMENTO DATI 
+        }
+    
+ });
+ 
+</script>

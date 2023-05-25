@@ -1,0 +1,58 @@
+
+<div class="container-fluid">
+        <div>
+            <p style="padding-left: 10px;"><strong>Assegna prodotto ad un canale abilitato</strong></p>
+        </div>
+<div class="card">
+<form name="canali_esercente" action="?page=esercenti_macchine_vetrine" method="post"> 
+              <div class="row">
+                     <label for="iva_id" class="col-sm-2 col-form-label text-end">Seleziona la macchina</label>
+                     <div class="col-sm-3">
+                            <select name="macchina_id" id="macchina_id" class="form-select" aria-label="Default select example">
+                                 <option value="0">SELEZIONA</option>
+                                    <?php foreach( $elenco_macchine as $row_macchina) {
+                                                            $id_macchina = $row_macchina["id"];  
+                                                            $matricola =  $row_macchina["matricola"];
+                                                            $tipologia_id_macchina =  $row_macchina["tipologia_id"];
+
+                                                            if ($id_macchina == $_POST['macchina_id']) {
+                                                                $selected = "selected";
+                                                            } else {
+                                                                $selected = "";
+                                                            }
+                                    ?>
+                                        <option <?= $selected; ?> value="<?= $id_macchina; ?>"><?= $matricola; ?></option>
+                                    <?php } ?>                 
+                              </select>
+                    </div>
+
+                    <div class="col-sm-2">
+                        <button type="submit" class="btn btn-success ">RICERCA</button>
+                    </div>
+                    <div class="col-sm-2">
+                        <a href="?page=esercenti_macchine_vetrine" class="btn btn-danger">RESET FILTRI</a>
+                    </div>
+                </div>
+               
+                            
+                
+</form>
+</div>
+
+    <?php 
+        if ($_SESSION['utente_id_ruolo'] == 3) {
+    ?>
+    <div class="row col-sm-2" style="padding-top: 10px; padding-bottom: 10px;">
+        <a href="?page=vetrina_assegna_prodotto" class="btn btn-success">ASSEGNA NUOVO PRODOTTO</a> 
+    </div>
+    <?php 
+        } 
+    ?>
+
+    <div class="card mb-4">
+        <?php  
+            echo $xcrud->render();   
+        ?>
+    </div> 
+</div>
+   

@@ -1,0 +1,44 @@
+<?php
+if ($_SESSION['utente_id_ruolo'] == 1) {
+    ?>
+ <div id="messaggio" class="alert alert-danger alert-dismissable">
+                                        <i class="fa fa-info"></i>
+                                        
+                                        <b>ATTENZIONE</b><br />
+                                        Da questa pagina è possibile per gli utenti già in essere modificare la sola password
+                                        <br />
+                                        Non salvare il record se non si è modificata la passowrd.
+    </div>
+    <?php
+}
+                // cripto la password 
+                $xcrud->before_insert('cripta_password');
+             
+            
+                
+              $xcrud->columns('password', true, false);
+               
+            //   $xcrud->field_callback('password','nascondi_password');
+                
+            //    $xcrud->change_type('password', 'password', 'sha256', 10);
+
+                // Se SUPERADMIN fai modificare la password
+                if ($_SESSION['utente_id_ruolo'] > 1) {
+                    $xcrud->fields('password', true, true, 'edit');
+                    
+                } else {
+                    $xcrud->before_update('cripta_password');
+                    $xcrud->fields('nome,cognome,email,data_scadenza,ruolo_id,attivo', true, true, 'edit');
+                   
+                }
+                
+                ?>
+<div class="container-fluid">
+    <div class="card mb-4">
+        <?php
+               
+                echo $xcrud->render(); 
+     ?>
+    </div>
+  </div> 
+   

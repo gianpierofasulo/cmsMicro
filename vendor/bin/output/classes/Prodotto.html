@@ -1,0 +1,1792 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"/>
+    <meta charset="utf-8"/>
+    <title>API Documentation</title>
+    <meta name="author" content=""/>
+    <meta name="description" content=""/>
+
+    <link href="../css/bootstrap-combined.no-icons.min.css" rel="stylesheet">
+    <link href="../css/font-awesome.min.css" rel="stylesheet">
+    <link href="../css/prism.css" rel="stylesheet" media="all"/>
+    <link href="../css/template.css" rel="stylesheet" media="all"/>
+    
+    <!--[if lt IE 9]>
+    <script src="../js/html5.js"></script>
+    <![endif]-->
+    <script src="../js/jquery-1.11.0.min.js"></script>
+    <script src="../js/ui/1.10.4/jquery-ui.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.smooth-scroll.js"></script>
+    <script src="../js/prism.min.js"></script>
+    <!-- TODO: Add http://jscrollpane.kelvinluck.com/ to style the scrollbars for browsers not using webkit-->
+    <script type="text/javascript">
+    function loadExternalCodeSnippets() {
+        Array.prototype.slice.call(document.querySelectorAll('pre[data-src]')).forEach(function (pre) {
+            var src = pre.getAttribute('data-src').replace( /\\/g, '/');
+            var extension = (src.match(/\.(\w+)$/) || [, ''])[1];
+            var language = 'php';
+
+            var code = document.createElement('code');
+            code.className = 'language-' + language;
+
+            pre.textContent = '';
+
+            code.textContent = 'Loading…';
+
+            pre.appendChild(code);
+
+            var xhr = new XMLHttpRequest();
+
+            xhr.open('GET', src, true);
+
+            xhr.onreadystatechange = function () {
+                if (xhr.readyState == 4) {
+
+                    if (xhr.status < 400 && xhr.responseText) {
+                        code.textContent = xhr.responseText;
+
+                        Prism.highlightElement(code);
+                    }
+                    else if (xhr.status >= 400) {
+                        code.textContent = '✖ Error ' + xhr.status + ' while fetching file: ' + xhr.statusText;
+                    }
+                    else {
+                        code.textContent = '✖ Error: File does not exist or is empty';
+                    }
+                }
+            };
+
+            xhr.send(null);
+        });
+    }
+
+    $(document).ready(function(){
+        loadExternalCodeSnippets();
+    });
+    $('#source-view').on('shown', function () {
+        loadExternalCodeSnippets();
+    })
+</script>
+
+    <link rel="shortcut icon" href="../images/favicon.ico"/>
+    <link rel="apple-touch-icon" href="../images/apple-touch-icon.png"/>
+    <link rel="apple-touch-icon" sizes="72x72" href="../images/apple-touch-icon-72x72.png"/>
+    <link rel="apple-touch-icon" sizes="114x114" href="../images/apple-touch-icon-114x114.png"/>
+</head>
+<body>
+
+<div class="navbar navbar-fixed-top">
+    <div class="navbar-inner">
+        <div class="container">
+            <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+                <i class="icon-ellipsis-vertical"></i>
+            </a>
+            <a class="brand" href="../index.html">API Documentation</a>
+
+            <div class="nav-collapse">
+                <ul class="nav pull-right">
+                                        <li class="dropdown" id="charts-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Charts <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../graphs/class.html">
+                                    <i class="icon-list-alt"></i>&#160;Class hierarchy diagram
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown" id="reports-menu">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                            Reports <b class="caret"></b>
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="../reports/errors.html">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <i class="icon-list-alt"></i>&#160;Errors <span class="label label-info pull-right">128</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../reports/markers.html">
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <i class="icon-list-alt"></i>&#160;Markers <span class="label label-info pull-right">0</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="../reports/deprecated.html">
+                                                                                                            <i class="icon-list-alt"></i>&#160;Deprecated <span class="label label-info pull-right">0</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--<div class="go_to_top">-->
+    <!--<a href="#___" style="color: inherit">Back to top&#160;&#160;<i class="icon-upload icon-white"></i></a>-->
+    <!--</div>-->
+</div>
+
+<div id="___" class="container-fluid">
+        <section class="row-fluid">
+        <div class="span2 sidebar">
+                                <div class="accordion" style="margin-bottom: 0">
+        <div class="accordion-group">
+            <div class="accordion-heading">
+                                    <a class="accordion-toggle " data-toggle="collapse" data-target="#namespace-316732185"></a>
+                                <a href="../namespaces/default.html" style="margin-left: 30px; padding-left: 0">\</a>
+            </div>
+            <div id="namespace-316732185" class="accordion-body collapse in">
+                <div class="accordion-inner">
+
+                    
+                    <ul>
+                                                                                                    <li class="class"><a href="../classes/Accessi.html">Accessi</a></li>
+                                                    <li class="class"><a href="../classes/Contabile.html">Contabile</a></li>
+                                                    <li class="class"><a href="../classes/Contabilita.html">Contabilita</a></li>
+                                                    <li class="class"><a href="../classes/Database.html">Database</a></li>
+                                                    <li class="class"><a href="../classes/GestioneLogOperazioni.html">GestioneLogOperazioni</a></li>
+                                                    <li class="class"><a href="../classes/JsonFromMachine.html">JsonFromMachine</a></li>
+                                                    <li class="class"><a href="../classes/JsonFromMachines.html">JsonFromMachines</a></li>
+                                                    <li class="class"><a href="../classes/Login.html">Login</a></li>
+                                                    <li class="class"><a href="../classes/LogOperazioni.html">LogOperazioni</a></li>
+                                                    <li class="class"><a href="../classes/Macchina.html">Macchina</a></li>
+                                                    <li class="class"><a href="../classes/Macchine.html">Macchine</a></li>
+                                                    <li class="class"><a href="../classes/Prodotti.html">Prodotti</a></li>
+                                                    <li class="class"><a href="../classes/Prodotto.html">Prodotto</a></li>
+                                                    <li class="class"><a href="../classes/Utente.html">Utente</a></li>
+                                                    <li class="class"><a href="../classes/Utenti.html">Utenti</a></li>
+                                            </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        </div>
+    </section>
+    <section class="row-fluid">
+        <div class="span10 offset2">
+            <div class="row-fluid">
+                <div class="span8 content class">
+                    <nav>
+                                                <a href="../namespaces/default.html">\</a> <i class="icon-level-up"></i>
+                                            </nav>
+                    <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal"><i class="icon-code"></i></a>
+
+                    <h1><small>\</small>Prodotto</h1>
+                    <p><em>Class Prodotto - gestione prodotti</em></p>
+                    
+                    
+                                        
+                    <section id="summary">
+                        <h2>Summary</h2>
+                        <section class="row-fluid heading">
+                            <section class="span4">
+                                <a href="#methods">Methods</a>
+                            </section>
+                            <section class="span4">
+                                <a href="#properties">Properties</a>
+                            </section>
+                            <section class="span4">
+                                <a href="#constants">Constants</a>
+                            </section>
+                        </section>
+                        <section class="row-fluid public">
+                            <section class="span4">
+                                                                    <a href="../classes/Prodotto.html#method___construct" class="">__construct()</a><br />
+                                                                    <a href="../classes/Prodotto.html#method_carica_iva" class="">carica_iva()</a><br />
+                                                                    <a href="../classes/Prodotto.html#method_cerca_prodotto_per_barcode" class="">cerca_prodotto_per_barcode()</a><br />
+                                                                    <a href="../classes/Prodotto.html#method_inserisci_prodotto_catalogo_esercente" class="">inserisci_prodotto_catalogo_esercente()</a><br />
+                                                                    <a href="../classes/Prodotto.html#method_inserisci_prodotto_catalogo_generale" class="">inserisci_prodotto_catalogo_generale()</a><br />
+                                                                    <a href="../classes/Prodotto.html#method_elenco_catalogo_per_esercente" class="">elenco_catalogo_per_esercente()</a><br />
+                                                                    <a href="../classes/Prodotto.html#method_elenco_categorie_vetrina" class="">elenco_categorie_vetrina()</a><br />
+                                                                    <a href="../classes/Prodotto.html#method_elenco_catalogo_per_macchina" class="">elenco_catalogo_per_macchina()</a><br />
+                                                                    <a href="../classes/Prodotto.html#method_elenco_catalogo_per_prodotto" class="">elenco_catalogo_per_prodotto()</a><br />
+                                                                    <a href="../classes/Prodotto.html#method_elenco_catalogo_esercente" class="">elenco_catalogo_esercente()</a><br />
+                                                                    <a href="../classes/Prodotto.html#method_elenco_catalogo_esercente_per_tipo_macchina" class="">elenco_catalogo_esercente_per_tipo_macchina()</a><br />
+                                                                    <a href="../classes/Prodotto.html#method_elenco_catalogo_generale" class="">elenco_catalogo_generale()</a><br />
+                                                                    <a href="../classes/Prodotto.html#method_elenco_vetrina_digitale" class="">elenco_vetrina_digitale()</a><br />
+                                                                    <a href="../classes/Prodotto.html#method_numero_prodotti_catalogo_generale" class="">numero_prodotti_catalogo_generale()</a><br />
+                                                                    <a href="../classes/Prodotto.html#method_numero_prodotti_catalogo_esercente" class="">numero_prodotti_catalogo_esercente()</a><br />
+                                                                    <a href="../classes/Prodotto.html#method_ricerca_prodotto_catalogo_generale_per_tipo_macchina" class="">ricerca_prodotto_catalogo_generale_per_tipo_macchina()</a><br />
+                                                                    <a href="../classes/Prodotto.html#method_ricerca_prodotti_catalogo_esercente_per_tipologia_macchina" class="">ricerca_prodotti_catalogo_esercente_per_tipologia_macchina()</a><br />
+                                                                    <a href="../classes/Prodotto.html#method_ricerca_prodotti_catalogo_esercente_per_matricola_macchina" class="">ricerca_prodotti_catalogo_esercente_per_matricola_macchina()</a><br />
+                                                                    <a href="../classes/Prodotto.html#method_ricerca_prodotto_catalogo_esercente_per_canale_e_matricola_macchina" class="">ricerca_prodotto_catalogo_esercente_per_canale_e_matricola_macchina()</a><br />
+                                                                    <a href="../classes/Prodotto.html#method_lista_canali_abilitati_per_matricola_macchina" class="">lista_canali_abilitati_per_matricola_macchina()</a><br />
+                                                                    <a href="../classes/Prodotto.html#method_inserisci_prodotto_catalogo_esercente_da_macchina" class="">inserisci_prodotto_catalogo_esercente_da_macchina()</a><br />
+                                                                    <a href="../classes/Prodotto.html#method_aggiorna_prodotto_catalogo_esercente_da_macchina" class="">aggiorna_prodotto_catalogo_esercente_da_macchina()</a><br />
+                                                                    <a href="../classes/Prodotto.html#method_associa_prodotto_multicanale_da_macchina" class="">associa_prodotto_multicanale_da_macchina()</a><br />
+                                                                    <a href="../classes/Prodotto.html#method_associa_prodotto_canale_da_macchina" class="">associa_prodotto_canale_da_macchina()</a><br />
+                                                                    <a href="../classes/Prodotto.html#method_crea_json_canali_da_macchina" class="">crea_json_canali_da_macchina()</a><br />
+                                                                    <a href="../classes/Prodotto.html#method_ricerca_prod_cat_eser_per_barcode" class="">ricerca_prod_cat_eser_per_barcode()</a><br />
+                                                                    <a href="../classes/Prodotto.html#method_cancella_prod_vetrina_digitale" class="">cancella_prod_vetrina_digitale()</a><br />
+                                                                    <a href="../classes/Prodotto.html#method_modifica_prod_vetrina_digitale" class="">modifica_prod_vetrina_digitale()</a><br />
+                                                                    <a href="../classes/Prodotto.html#method_aggiungi_prod_vetrina_digitale" class="">aggiungi_prod_vetrina_digitale()</a><br />
+                                                            </section>
+                            <section class="span4">
+                                                                    <em>No public properties found</em>
+                                                            </section>
+                            <section class="span4">
+                                                                    <em>No constants found</em>
+                                                            </section>
+                        </section>
+                        <section class="row-fluid protected">
+                            <section class="span4">
+                                                                    <em>No protected methods found</em>
+                                                            </section>
+                            <section class="span4">
+                                                                    <em>No protected properties found</em>
+                                                            </section>
+                            <section class="span4">
+                                <em>N/A</em>
+                            </section>
+                        </section>
+                        <section class="row-fluid private">
+                            <section class="span4">
+                                                                    <em>No private methods found</em>
+                                                            </section>
+                            <section class="span4">
+                                                                    <a href="../classes/Prodotto.html#property_db" class="">$db</a><br />
+                                                            </section>
+                            <section class="span4">
+                                <em>N/A</em>
+                            </section>
+                        </section>
+                    </section>
+                </div>
+                <aside class="span4 detailsbar">
+                                        
+                    
+                    <dl>
+                        <dt>File</dt>
+                            <dd><a href="../files/class_prodotti.html"><div class="path-wrapper">class_prodotti.php</div></a></dd>
+                                                <dt>Package</dt>
+                            <dd><div class="namespace-wrapper">CMS MICROHARD</div></dd>
+                                                <dt>Class hierarchy</dt>
+                            <dd class="hierarchy">
+                                                                                                                                                                                                                                                                                                
+                                        <div class="namespace-wrapper"><a href="../classes/Prodotti.html">\Prodotti</a></div>
+                                                                                                    <div class="namespace-wrapper">\Prodotto</div>
+                            </dd>
+
+                        
+                        
+                        
+                                                
+                                                                        </dl>
+                    <h2>Tags</h2>
+                    <table class="table table-condensed">
+                                            <tr><td colspan="2"><em>None found</em></td></tr>
+                                        </table>
+                </aside>
+            </div>
+
+                        
+                                    <a id="properties" name="properties"></a>
+            <div class="row-fluid">
+                <div class="span8 content class">
+                    <h2>Properties</h2>
+                </div>
+                <aside class="span4 detailsbar"></aside>
+            </div>
+
+                                                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="property_db" name="property_db" class="anchor"></a>
+            <article class="property">
+                <h3 class="private ">$db</h3>
+                <pre class="signature">$db : </pre>
+                <p><em></em></p>
+                
+
+                                <h4>Type</h4>
+                
+                                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                        <dl>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr>
+                        <th>
+                            param
+                        </th>
+                        <td>
+                                                                                            
+                                                    </td>
+                    </tr>
+                            </table>
+        </aside>
+    </div>
+
+                            
+                                    <a id="methods" name="methods"></a>
+            <div class="row-fluid">
+                <div class="span8 content class"><h2>Methods</h2></div>
+                <aside class="span4 detailsbar"></aside>
+            </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method___construct" name="method___construct" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">__construct()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">__construct() : void</pre>
+                <p><em>Costruttore instanza per l&#039;oggetto del Database</em></p>
+                
+
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/Prodotto.html"><div class="path-wrapper">\Prodotto</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_carica_iva" name="method_carica_iva" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">carica_iva()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">carica_iva() </pre>
+                <p><em>Metodo carica_iva
+elenca tutte le valute IVA</em></p>
+                
+
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/Prodotto.html"><div class="path-wrapper">\Prodotto</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_cerca_prodotto_per_barcode" name="method_cerca_prodotto_per_barcode" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">cerca_prodotto_per_barcode()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">cerca_prodotto_per_barcode(string  <span class="argument">$term</span>, integer  <span class="argument">$id_tipologia_macchina</span>) </pre>
+                <p><em>Metodo cerca_prodotto_per_barcode
+ricerca ci un singolo prodotto in base al Barcode</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$term </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$id_tipologia_macchina </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/Prodotto.html"><div class="path-wrapper">\Prodotto</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_inserisci_prodotto_catalogo_esercente" name="method_inserisci_prodotto_catalogo_esercente" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">inserisci_prodotto_catalogo_esercente()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">inserisci_prodotto_catalogo_esercente(integer  <span class="argument">$macchina_id</span>, string  <span class="argument">$codice_a_barre</span>, string  <span class="argument">$descrizione</span>, string  <span class="argument">$ristretto_per_minori</span>, string  <span class="argument">$vendibile</span>, string  <span class="argument">$vendibile_via_web</span>, integer  <span class="argument">$larghezza</span>, integer  <span class="argument">$profondita</span>, integer  <span class="argument">$prezzo</span>, integer  <span class="argument">$prezzo_scontato</span>, integer  <span class="argument">$iva_id</span>, string  <span class="argument">$immagine</span>, integer  <span class="argument">$macchina_id_tipologia</span>, string  <span class="argument">$titolo</span>, integer  <span class="argument">$minuti</span>) </pre>
+                <p><em>Metodo inserisci_prodotto_catalogo_esercente
+inserisce un singolo prodotto nel catalogo esercente</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$macchina_id </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$codice_a_barre </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$descrizione </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$ristretto_per_minori </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vendibile </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vendibile_via_web </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$larghezza </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$profondita </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$prezzo </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$prezzo_scontato </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$iva_id </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$immagine </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$macchina_id_tipologia </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$titolo </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$minuti </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/Prodotto.html"><div class="path-wrapper">\Prodotto</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_inserisci_prodotto_catalogo_generale" name="method_inserisci_prodotto_catalogo_generale" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">inserisci_prodotto_catalogo_generale()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">inserisci_prodotto_catalogo_generale(string  <span class="argument">$immagine</span>, string  <span class="argument">$barcode</span>, string  <span class="argument">$titolo</span>, string  <span class="argument">$categoria</span>, string  <span class="argument">$ristretto_per_minori</span>, integer  <span class="argument">$vendibile</span>, integer  <span class="argument">$vendibile_via_web</span>, integer  <span class="argument">$corrispettivi</span>, integer  <span class="argument">$larghezza</span>, integer  <span class="argument">$profondita</span>, string  <span class="argument">$descrizione</span>, integer  <span class="argument">$prezzo</span>, integer  <span class="argument">$prezzo_scontato</span>, integer  <span class="argument">$id_tipologia</span>) </pre>
+                <p><em>Metodo inserisci_prodotto_catalogo_esercente
+inserisce un singolo prodotto nel catalogo esercente</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$immagine </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$barcode </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$titolo </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$categoria </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$ristretto_per_minori </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$vendibile </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$vendibile_via_web </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$corrispettivi </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$larghezza </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$profondita </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$descrizione </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$prezzo </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$prezzo_scontato </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$id_tipologia </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/Prodotto.html"><div class="path-wrapper">\Prodotto</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_elenco_catalogo_per_esercente" name="method_elenco_catalogo_per_esercente" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">elenco_catalogo_per_esercente()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">elenco_catalogo_per_esercente(integer  <span class="argument">$id_esercente</span>) </pre>
+                <p><em>Metodo elenco_catalogo_per_esercente
+restituisce tutti i prodotti a catalogo dell&#039;esercente ricercato</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$id_esercente </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/Prodotto.html"><div class="path-wrapper">\Prodotto</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_elenco_categorie_vetrina" name="method_elenco_categorie_vetrina" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">elenco_categorie_vetrina()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">elenco_categorie_vetrina(string  <span class="argument">$tipologia</span>) </pre>
+                <p><em>Metodo elenco_categorie_vetrina
+restituisce le categorie vetrina digitale della tipologia macchina scelta</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$tipologia </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/Prodotto.html"><div class="path-wrapper">\Prodotto</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_elenco_catalogo_per_macchina" name="method_elenco_catalogo_per_macchina" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">elenco_catalogo_per_macchina()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">elenco_catalogo_per_macchina(integer  <span class="argument">$id_macchina</span>) </pre>
+                <p><em>Metodo elenco_catalogo_per_macchina
+restituisce tutti i prodotti a catalogo della macchina ricercata</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$id_macchina </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/Prodotto.html"><div class="path-wrapper">\Prodotto</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_elenco_catalogo_per_prodotto" name="method_elenco_catalogo_per_prodotto" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">elenco_catalogo_per_prodotto()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">elenco_catalogo_per_prodotto(integer  <span class="argument">$id_prodotto</span>) </pre>
+                <p><em>Metodo elenco_catalogo_per_prodotto
+restituisce il prodotto ricercato</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$id_prodotto </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/Prodotto.html"><div class="path-wrapper">\Prodotto</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_elenco_catalogo_esercente" name="method_elenco_catalogo_esercente" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">elenco_catalogo_esercente()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">elenco_catalogo_esercente() </pre>
+                <p><em>Metodo elenco_catalogo_esercente
+restituisce tutti i prodotti nella tab catalogo_esercente</em></p>
+                
+
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/Prodotto.html"><div class="path-wrapper">\Prodotto</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_elenco_catalogo_esercente_per_tipo_macchina" name="method_elenco_catalogo_esercente_per_tipo_macchina" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">elenco_catalogo_esercente_per_tipo_macchina()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">elenco_catalogo_esercente_per_tipo_macchina(integer  <span class="argument">$id_tipologia</span>) </pre>
+                <p><em>Metodo elenco_catalogo_esercente_per_tipo_macchina
+restituisce tutti i prodotti del catalogo esercente in base alla tipologia di macchina ricercata</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$id_tipologia </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/Prodotto.html"><div class="path-wrapper">\Prodotto</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_elenco_catalogo_generale" name="method_elenco_catalogo_generale" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">elenco_catalogo_generale()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">elenco_catalogo_generale(integer  <span class="argument">$id_tipologia_macchina</span>) </pre>
+                <p><em>Metodo elenco_catalogo_generale
+restituisce tutti i prodotti del catalogo GENERALE in base alla tipologia di macchina ricercata</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$id_tipologia_macchina </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/Prodotto.html"><div class="path-wrapper">\Prodotto</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_elenco_vetrina_digitale" name="method_elenco_vetrina_digitale" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">elenco_vetrina_digitale()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">elenco_vetrina_digitale(  <span class="argument">$id_esercente</span>,   <span class="argument">$id_macchina</span>,   <span class="argument">$id_vetrina</span>) </pre>
+                <p><em>Metodo elenco_catalogo_generale
+restituisce tutti i prodotti del catalogo GENERALE in base alla tipologia di macchina ricercata</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td></td>
+                                <td>$id_esercente </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td></td>
+                                <td>$id_macchina </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td></td>
+                                <td>$id_vetrina </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/Prodotto.html"><div class="path-wrapper">\Prodotto</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_numero_prodotti_catalogo_generale" name="method_numero_prodotti_catalogo_generale" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">numero_prodotti_catalogo_generale()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">numero_prodotti_catalogo_generale() </pre>
+                <p><em>Metodo numero_prodotti_catalogo_generale
+restituisce i N. totale dei prodotti del catalogo GENERALE</em></p>
+                
+
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/Prodotto.html"><div class="path-wrapper">\Prodotto</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_numero_prodotti_catalogo_esercente" name="method_numero_prodotti_catalogo_esercente" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">numero_prodotti_catalogo_esercente()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">numero_prodotti_catalogo_esercente() </pre>
+                <p><em>Metodo numero_prodotti_catalogo_generale
+restituisce i N. totale dei prodotti del catalogo ESERCENTE</em></p>
+                
+
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/Prodotto.html"><div class="path-wrapper">\Prodotto</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ricerca_prodotto_catalogo_generale_per_tipo_macchina" name="method_ricerca_prodotto_catalogo_generale_per_tipo_macchina" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">ricerca_prodotto_catalogo_generale_per_tipo_macchina()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ricerca_prodotto_catalogo_generale_per_tipo_macchina(string  <span class="argument">$barcode</span>, integer  <span class="argument">$id_tipologia</span>) </pre>
+                <p><em>Metodo  ricerca_prodotto_catalogo_generale_per_tipo_macchina
+restituisce il prodotto del catalogo GENERALE in base alla tipologia di macchina ricercata e barcode</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$barcode </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$id_tipologia </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/Prodotto.html"><div class="path-wrapper">\Prodotto</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ricerca_prodotti_catalogo_esercente_per_tipologia_macchina" name="method_ricerca_prodotti_catalogo_esercente_per_tipologia_macchina" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">ricerca_prodotti_catalogo_esercente_per_tipologia_macchina()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ricerca_prodotti_catalogo_esercente_per_tipologia_macchina(integer  <span class="argument">$id_esercente</span>, integer  <span class="argument">$id_tipologia</span>) </pre>
+                <p><em>Metodo public function ricerca_prodotti_catalogo_esercente_per_tipologia_macchina
+restituisce il prodotto del catalogo GENERALE in base alla tipologia di macchina ricercata e barcode</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$id_esercente </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$id_tipologia </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/Prodotto.html"><div class="path-wrapper">\Prodotto</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ricerca_prodotti_catalogo_esercente_per_matricola_macchina" name="method_ricerca_prodotti_catalogo_esercente_per_matricola_macchina" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">ricerca_prodotti_catalogo_esercente_per_matricola_macchina()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ricerca_prodotti_catalogo_esercente_per_matricola_macchina(integer  <span class="argument">$id_esercente</span>, string  <span class="argument">$matricola</span>) </pre>
+                <p><em>Metodo  ricerca_prodotti_catalogo_esercente_per_matricola_macchina
+restituisce il prodotto del catalogo ESERCENTE in base all&#039;id esercente e alla matricola macchina</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$id_esercente </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$matricola </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/Prodotto.html"><div class="path-wrapper">\Prodotto</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ricerca_prodotto_catalogo_esercente_per_canale_e_matricola_macchina" name="method_ricerca_prodotto_catalogo_esercente_per_canale_e_matricola_macchina" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">ricerca_prodotto_catalogo_esercente_per_canale_e_matricola_macchina()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ricerca_prodotto_catalogo_esercente_per_canale_e_matricola_macchina(integer  <span class="argument">$id_esercente</span>, integer  <span class="argument">$id_canale</span>, string  <span class="argument">$matricola</span>) </pre>
+                <p><em>Metodo  ricerca_prodotto_catalogo_esercente_per_canale_e_matricola_macchina
+restituisce la vetrina prodotti del catalogo ESERCENTE in base all&#039;id esercente, n. canale e alla matricola macchina</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$id_esercente </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$id_canale </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$matricola </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/Prodotto.html"><div class="path-wrapper">\Prodotto</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_lista_canali_abilitati_per_matricola_macchina" name="method_lista_canali_abilitati_per_matricola_macchina" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">lista_canali_abilitati_per_matricola_macchina()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">lista_canali_abilitati_per_matricola_macchina(integer  <span class="argument">$id_esercente</span>, string  <span class="argument">$matricola</span>) </pre>
+                <p><em>Metodo  lista_canali_abilitati_per_matricola_macchina
+restituisce i canali se liberi o occupati  in base all&#039;id esercente, n. canale e alla matricola macchina</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$id_esercente </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$matricola </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/Prodotto.html"><div class="path-wrapper">\Prodotto</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_inserisci_prodotto_catalogo_esercente_da_macchina" name="method_inserisci_prodotto_catalogo_esercente_da_macchina" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">inserisci_prodotto_catalogo_esercente_da_macchina()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">inserisci_prodotto_catalogo_esercente_da_macchina(integer  <span class="argument">$macchina_id</span>, string  <span class="argument">$codice_a_barre</span>, string  <span class="argument">$descrizione</span>, string  <span class="argument">$ristretto_per_minori</span>, string  <span class="argument">$vendibile</span>, string  <span class="argument">$vendibile_via_web</span>, integer  <span class="argument">$larghezza</span>, integer  <span class="argument">$profondita</span>, integer  <span class="argument">$prezzo</span>, integer  <span class="argument">$prezzo_scontato</span>, integer  <span class="argument">$iva_id</span>, string  <span class="argument">$immagine</span>, integer  <span class="argument">$macchina_id_tipologia</span>, string  <span class="argument">$titolo</span>, integer  <span class="argument">$minuti</span>, integer  <span class="argument">$canale</span>) </pre>
+                <p><em>Metodo  inserisci_prodotto_catalogo_esercente_da_macchina
+inserisce un prodotto direttamente dalla vending nel catalogo ESERCENTE</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$macchina_id </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$codice_a_barre </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$descrizione </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$ristretto_per_minori </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vendibile </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$vendibile_via_web </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$larghezza </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$profondita </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$prezzo </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$prezzo_scontato </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$iva_id </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$immagine </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$macchina_id_tipologia </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$titolo </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$minuti </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$canale </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/Prodotto.html"><div class="path-wrapper">\Prodotto</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_aggiorna_prodotto_catalogo_esercente_da_macchina" name="method_aggiorna_prodotto_catalogo_esercente_da_macchina" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">aggiorna_prodotto_catalogo_esercente_da_macchina()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">aggiorna_prodotto_catalogo_esercente_da_macchina(integer  <span class="argument">$utente_id</span>, integer  <span class="argument">$id_prodotto</span>, integer  <span class="argument">$macchina_id</span>, integer  <span class="argument">$canale</span>, string  <span class="argument">$descrizione</span>, integer  <span class="argument">$vendibile</span>, integer  <span class="argument">$vendibile_via_web</span>, integer  <span class="argument">$larghezza</span>, integer  <span class="argument">$profondita</span>, integer  <span class="argument">$prezzo</span>, string  <span class="argument">$titolo</span>) </pre>
+                <p><em>Metodo  aggiorna_prodotto_catalogo_esercente_da_macchina
+aggiorna un prodotto direttamente dalla vending nel catalogo ESERCENTE</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$utente_id </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$id_prodotto </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$macchina_id </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$canale </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$descrizione </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$vendibile </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$vendibile_via_web </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$larghezza </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$profondita </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$prezzo </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$titolo </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/Prodotto.html"><div class="path-wrapper">\Prodotto</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_associa_prodotto_multicanale_da_macchina" name="method_associa_prodotto_multicanale_da_macchina" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">associa_prodotto_multicanale_da_macchina()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">associa_prodotto_multicanale_da_macchina(string  <span class="argument">$matricola_macchina</span>, integer  <span class="argument">$id_prodotto_da_associare</span>, integer  <span class="argument">$canale</span>,   <span class="argument">$larghezza</span>) </pre>
+                <p><em>Metodo  associa_prodotto_multicanale_da_macchina
+veede il prodotto da associare si più canali per poi avere i dati a disposizione per la insert vera e propria</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$matricola_macchina </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$id_prodotto_da_associare </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$canale </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td></td>
+                                <td>$larghezza </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/Prodotto.html"><div class="path-wrapper">\Prodotto</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_associa_prodotto_canale_da_macchina" name="method_associa_prodotto_canale_da_macchina" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">associa_prodotto_canale_da_macchina()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">associa_prodotto_canale_da_macchina(string  <span class="argument">$matricola_macchina</span>, integer  <span class="argument">$id_prodotto_da_associare</span>, integer  <span class="argument">$canale</span>) </pre>
+                <p><em>Metodo  associa_prodotto_canale_da_macchina
+veede il prodotto da associare per poi avere i dati a disposizione per la insert vera e propria</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>string</td>
+                                <td>$matricola_macchina </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$id_prodotto_da_associare </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$canale </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/Prodotto.html"><div class="path-wrapper">\Prodotto</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_crea_json_canali_da_macchina" name="method_crea_json_canali_da_macchina" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">crea_json_canali_da_macchina()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">crea_json_canali_da_macchina(  <span class="argument">$matricola_macchina</span>,   <span class="argument">$esercente_id</span>) </pre>
+                <p><em></em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td></td>
+                                <td>$matricola_macchina </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td></td>
+                                <td>$esercente_id </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/Prodotto.html"><div class="path-wrapper">\Prodotto</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_ricerca_prod_cat_eser_per_barcode" name="method_ricerca_prod_cat_eser_per_barcode" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">ricerca_prod_cat_eser_per_barcode()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">ricerca_prod_cat_eser_per_barcode(integer  <span class="argument">$id_esercente</span>, string  <span class="argument">$barcode</span>) </pre>
+                <p><em>Metodo  ricerca_prod_cat_eser_per_barcode
+ricerca il prodotto sul catalogo esercente in base al barcode</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$id_esercente </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>string</td>
+                                <td>$barcode </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/Prodotto.html"><div class="path-wrapper">\Prodotto</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_cancella_prod_vetrina_digitale" name="method_cancella_prod_vetrina_digitale" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">cancella_prod_vetrina_digitale()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">cancella_prod_vetrina_digitale(integer  <span class="argument">$id_record</span>) </pre>
+                <p><em>Metodo  cancella_prod_vetrina_digitale
+cancella il prodotto dalla vetrina digitale</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$id_record </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/Prodotto.html"><div class="path-wrapper">\Prodotto</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_modifica_prod_vetrina_digitale" name="method_modifica_prod_vetrina_digitale" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">modifica_prod_vetrina_digitale()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">modifica_prod_vetrina_digitale(integer  <span class="argument">$id_record</span>, integer  <span class="argument">$id_prodotto_selezionato</span>) </pre>
+                <p><em>Metodo  modifica_prod_vetrina_digitale
+modifica il prodotto dalla vetrina digitale</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$id_record </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$id_prodotto_selezionato </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/Prodotto.html"><div class="path-wrapper">\Prodotto</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                    <div class="row-fluid">
+        <div class="span8 content class">
+            <a id="method_aggiungi_prod_vetrina_digitale" name="method_aggiungi_prod_vetrina_digitale" class="anchor"></a>
+            <article class="method">
+                <h3 class="public ">aggiungi_prod_vetrina_digitale()</h3>
+                <a href="#source-view" role="button" class="pull-right btn" data-toggle="modal" style="font-size: 1.1em; padding: 9px 14px"><i class="icon-code"></i></a>
+                <pre class="signature" style="margin-right: 54px;">aggiungi_prod_vetrina_digitale(  <span class="argument">$id_slot</span>, integer  <span class="argument">$id_prodotto_selezionato</span>,   <span class="argument">$id_esercente</span>,   <span class="argument">$id_macchina</span>,   <span class="argument">$layout</span>,   <span class="argument">$id_vetrina</span>) </pre>
+                <p><em>Metodo  aggiungi_prod_vetrina_digitale
+Aggiunge il prodotto dalla vetrina digitale</em></p>
+                
+
+                                    <h4>Parameters</h4>
+                    <table class="table table-condensed table-hover">
+                                                    <tr>
+                                <td></td>
+                                <td>$id_slot </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td>integer</td>
+                                <td>$id_prodotto_selezionato </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td></td>
+                                <td>$id_esercente </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td></td>
+                                <td>$id_macchina </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td></td>
+                                <td>$layout </td>
+                                <td></td>
+                            </tr>
+                                                    <tr>
+                                <td></td>
+                                <td>$id_vetrina </td>
+                                <td></td>
+                            </tr>
+                                            </table>
+                
+                
+                
+                            </article>
+        </div>
+        <aside class="span4 detailsbar">
+            <h1><i class="icon-arrow-down"></i></h1>
+                                                            <dl>
+                                                    <dt>Inherited from</dt>
+                    <dd><a href="../classes/Prodotto.html"><div class="path-wrapper">\Prodotto</div></a></dd>
+                                                            </dl>
+            <h2>Tags</h2>
+            <table class="table table-condensed">
+                                    <tr><td colspan="2"><em>None found</em></td></tr>
+                            </table>
+        </aside>
+    </div>
+
+                                                                    </div>
+    </section>
+
+    <div id="source-view" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="source-view-label" aria-hidden="true">
+        <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            <h3 id="source-view-label">class_prodotti.php</h3>
+        </div>
+        <div class="modal-body">
+            <pre data-src="../files/class_prodotti.php.txt" class="language-php line-numbers"></pre>
+        </div>
+    </div>
+
+    <footer class="row-fluid">
+        <section class="span10 offset2">
+            <section class="row-fluid">
+                <section class="span10 offset1">
+                    <section class="row-fluid footer-sections">
+                        <section class="span4">
+                                                        <h1><i class="icon-code"></i></h1>
+                            <div>
+                                <ul>
+                                                                    </ul>
+                            </div>
+                        </section>
+                        <section class="span4">
+                                                        <h1><i class="icon-bar-chart"></i></h1>
+                            <div>
+                                <ul>
+                                    <li><a href="../graphs/class.html">Class Hierarchy Diagram</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                        <section class="span4">
+                                                        <h1><i class="icon-pushpin"></i></h1>
+                            <div>
+                                <ul>
+                                    <li><a href="../reports/errors.html">Errors</a></li>
+                                    <li><a href="../reports/markers.html">Markers</a></li>
+                                </ul>
+                            </div>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="row-fluid">
+                <section class="span10 offset1">
+                    <hr />
+                    Documentation is powered by <a href="http://www.phpdoc.org/">phpDocumentor </a> and authored
+                    on April 3rd, 2023 at 17:40.
+                </section>
+            </section>
+        </section>
+    </footer>
+</div>
+
+</body>
+</html>

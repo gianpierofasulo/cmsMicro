@@ -1,0 +1,237 @@
+  <div class="bg-light  d-flex flex-row align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div class="clearfix">
+              <h1 class=" text-center">GESTIONE CATALOGO - MACCHINA</h1>
+              <br />
+             
+            </div>
+              
+          </div>
+           <form name="prodotto" action="?page=inserisci_prodotto_catalogo_esercente" method="post" enctype="multipart/form-data"> 
+              <div class="mb-3 row">
+                     <label for="iva_id" class="col-sm-2 col-form-label">Seleziona la macchina</label>
+                     <div class="col-sm-6">
+                            <select name="macchina_id" id="macchina_id" class="form-select" aria-label="Default select example">
+                                 <option value="0">SELEZIONA</option>
+                                    <?php foreach( $elenco_macchine as $row_macchina) {
+                                                            $id_macchina = $row_macchina["id"];  
+                                                            $matricola =  $row_macchina["matricola"];
+                                                            $tipologia_id_macchina =  $row_macchina["tipologia_id"];
+                                    ?>
+                                        <option value="<?= $id_macchina.','.$tipologia_id_macchina; ?>"><?= $matricola; ?></option>
+                                    <?php } ?>                 
+                              </select>
+                    </div>
+                </div>
+         
+           <div class="mb-3 row">
+                <label for="cercaProdotto" class="col-sm-2 col-form-label">Cerca per codice a barre</label>
+                <div class="col-sm-6">
+                    <!--<input type="text" class=" form-control" id="cercaProdotto" placeholder="Inserisci il codice a barre e clicca cerca">-->
+                     <input name="cercaProdotto" id="cercaProdotto" class="form-control" type="text"  placeholder="Inserisci il codice a barre" autofocus >
+      				
+                </div>
+                <div class="col-sm-4">
+                   <button type="button" id="bottone_cerca_prodotto" class="btn btn-primary mb-3">CERCA</button>
+                </div>
+            </div>
+            <div class="mb-3 row"><hr /></div>
+            
+            
+                <input type="hidden" name="id_tipologia_macchina" id="id_tipologia_macchina" value="" />
+                
+                <div class="mb-3 row">
+                    <label for="codice_a_barre" class="col-sm-2 col-form-label">Codice a barre</label>
+                    <div class="col-sm-6">
+                        <input type="text" class=" form-control" id="codice_a_barre" name="codice_a_barre" required="" >
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="descrizione" class="col-sm-2 col-form-label">Titolo</label>
+                    <div class="col-sm-6">
+                        <input type="text" class=" form-control" id="titolo" name="titolo"  required="" >
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="descrizione" class="col-sm-2 col-form-label">Descrizione</label>
+                    <div class="col-sm-6">
+                        <input type="text" class=" form-control" id="descrizione" name="descrizione"  required="" >
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="immagine_attuale" class="col-sm-2 col-form-label">Immagine attuale</label>
+                    <div class="col-sm-6">
+                        <img src="" id="visualizza_immagine_attuale" name="visualizza_immagine_attuale" >
+                        <input type="hidden" id="immagine_attuale" name="immagine_attuale"  >
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="immagine_da_sostituire" class="col-sm-2 col-form-label">Sostituisci Immagine</label>
+                    <div class="col-sm-6">
+                        <input type="file" class=" form-control" id="allegato" name="allegato[]" accept="image/png, image/jpeg">
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                     <label for="ristretto_per_minori" class="col-sm-2 col-form-label">Ristretto per minori</label>
+                     <div class="col-sm-6">
+                            <select name="ristretto_per_minori" id="ristretto_per_minori" class="form-select" aria-label="Default select example">
+                                <option value="0">NO</option>
+                                <option value="1">SI</option>                             
+                              </select>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                     <label for="vendibile" class="col-sm-2 col-form-label">Vendibile</label>
+                     <div class="col-sm-6">
+                            <select name="vendibile" id="vendibile" class="form-select" aria-label="Default select example">
+                                <option value="0">NO</option>
+                                <option value="1">SI</option>                             
+                              </select>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                     <label for="vendibile_via_web" class="col-sm-2 col-form-label">Vendibile via web</label>
+                     <div class="col-sm-6">
+                            <select name="vendibile_via_web" id="vendibile_via_web" class="form-select" aria-label="Default select example">
+                                <option value="0">NO</option>
+                                <option value="1">SI</option>                             
+                              </select>
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="larghezza" class="col-sm-2 col-form-label">Larghezza</label>
+                    <div class="col-sm-6">
+                        <input type="number" class=" form-control" id="larghezza" name="larghezza"  required="" >
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="profondita" class="col-sm-2 col-form-label">Profondità</label>
+                    <div class="col-sm-6">
+                        <input type="number" class=" form-control" id="profondita" name="profondita"  required="" >
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="prezzo" class="col-sm-2 col-form-label">Prezzo</label>
+                    <div class="col-sm-6">
+                        <input type="number" class=" form-control" id="prezzo" name="prezzo"  required="" >
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="prezzo" class="col-sm-2 col-form-label">Prezzo scontato</label>
+                    <div class="col-sm-6">
+                        <input type="number" class=" form-control" id="prezzo_scontato" name="prezzo_scontato"  required="" >
+                    </div>
+                </div>
+                <div class="mb-3 row">
+                    <label for="prezzo" class="col-sm-2 col-form-label">Minuti</label>
+                    <div class="col-sm-6">
+                        <input type="number" class=" form-control" id="minuti" name="minuti"  required="" >
+                    </div>
+                </div>
+                
+                <div class="mb-3 row">
+                     <label for="iva_id" class="col-sm-2 col-form-label">IVA</label>
+                     <div class="col-sm-6">
+                            <select name="iva_id" id="iva_id" class="form-select" aria-label="Default select example">
+                                    <?php foreach( $dati_iva as $row_iva) {
+                                                            $id_iva = $row_iva["id"];  
+                                                            $descrizione =  $row_iva["descrizione"];
+                                    ?>
+                                        <option value="<?= $id_iva; ?>"><?= $descrizione; ?></option>
+                                    <?php } ?>                 
+                              </select>
+                    </div>
+                </div>
+                
+               
+               
+                     <div class="row">
+                         <div class="col-6 text-end" >
+                            <button type="submit" class="btn btn-success col-6 ">INSERISCI PRODOTTO NEL CATALOGO</button>
+                        </div>
+                    </div>
+              
+                
+            </form>
+        </div>
+      </div>
+    </div>
+ <script  src="https://code.jquery.com/jquery-3.6.1.min.js"  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+	
+<script>
+ $('#macchina_id').on("change", function (event) {
+     $('#id_tipologia_macchina').val('');
+     
+     let values = $(this).val();
+     const split_values = values.split(",");
+     let id_macchina = split_values[0];
+     let id_tipologia = split_values[1];
+     
+    $('#id_tipologia_macchina').val(id_tipologia);
+ });
+ 
+ 
+$(document).on('submit',function(){
+    let id_tipologia_macchina = $('#id_tipologia_macchina').val();
+      
+                    if ( id_tipologia_macchina === '' ){
+                        alert('devi selezionare una tipologia di macchina!');
+                        return false;
+                    }
+});
+
+$('#bottone_cerca_prodotto').on("click", function (event) { 
+   
+      let controllo = '';
+      let id_tipologia_macchina = $('#id_tipologia_macchina').val();
+      
+                    if ( $('#cercaProdotto').val() === '' || id_tipologia_macchina === '' ){
+                        controllo = false;
+                    } else {
+                        controllo = true;
+                    }         
+                    
+                    let prodotto = $('#cercaProdotto').val();
+                   
+                if ( controllo === true ) {
+                           
+                            $.ajax({   
+                                url: "api/ricerca_prodotto.php",
+                                data: { term: prodotto, id_tipologia_macchina: id_tipologia_macchina },
+                                type: 'GET',
+                                dataType: 'json',
+                                success: function (data) { 
+                                 
+                                 $('#codice_a_barre').val(data[0].codice_a_barre);
+                                    $('#descrizione').val(data[0].descrizione);
+                                    $('#titolo').val(data[0].titolo);
+                                    $('#visualizza_immagine_attuale').attr('src','../app/immaginiprodotti/' + data[0].immagine);
+                                    $('#immagine_attuale').val( data[0].immagine);
+                                    $('#ristretto_per_minori').val(data[0].ristretto_per_minori);
+                                    $('#vendibile').val(data[0].vendibile);
+                                    $('#vendibile_via_web').val(data[0].vendibile_via_web);
+                                    $('#larghezza').val(data[0].larghezza);
+                                    $('#profondita').val(data[0].profondita);
+                                    $('#prezzo').val(data[0].prezzo);
+                                    $('#prezzo_scontato').val(data[0].prezzo_scontato);
+                                    $('#iva_id').val(data[0].iva_id);
+                                    $('#minuti').val(data[0].minuti);
+                              
+                            },
+                              error:function(){
+                                  alert ('Prodotto non trovato');
+                                  return false;
+                              }
+                          }); // END CARICAMENTO DATI ANAGRAFICA UTENTE
+                      } else {
+                          alert ('Il codice a barre e la seleziona della macchina sono  obbligatori');
+                                  return false;
+                      }
+                      
+                  
+         
+      }); // END CLICK 
+    
+    </script><!-- comment -->

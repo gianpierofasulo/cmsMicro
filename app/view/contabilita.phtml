@@ -1,0 +1,187 @@
+  <div class="bg-light  d-flex flex-row align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div class="clearfix">
+              <h1 class=" text-center">CONTABILITA'</h1>
+              <br />
+             
+            </div>
+              
+          </div>
+
+                <div class="mb-4 row">
+                     <label for="iva_id" class="col-sm-2 col-form-label">Seleziona la macchina</label>
+                        <div class="col-sm-6">
+                                <select name="macchina_matricola" id="macchina_matricola" class="form-select" aria-label="Default select example">
+                                    <option value="0">SELEZIONA</option>
+                                        <?php foreach( $elenco_macchine as $row_macchina) {
+                                                                $id_macchina = $row_macchina["id"];  
+                                                                $matricola =  $row_macchina["matricola"];
+                                                                $tipologia_id_macchina =  $row_macchina["tipologia_id"];
+                                        ?>
+                                            <option value="<?= $id_macchina.','.$matricola; ?>">Matr: <?= $matricola; ?></option>
+                                        <?php } ?>                 
+                                </select>
+                        </div>
+                </div>
+
+               
+                <span id="span_dati" class="d-none">
+                      <span class="row justify-content-center" id="dati_contabilita"></span>
+                      <span class="row justify-content-center" id="dati_contabilita_motori"></span>
+               
+                      <div class="row" style="margin-top: 25px;">
+                          <div class="col-6 text-end" >
+                            <form name="contabilita_azzera" action="?page=contabilita_azzera" method="post"> 
+                                <input type="hidden" name="id_esercente" id="id_esercente" value="<?= $utente; ?>" />
+                                <input type="hidden" name="id_macchina" id="id_macchina" value="" />
+                                <input type="hidden" name="matricola_macchina_form" id="matricola_macchina_form" value="" />
+                                <button type="submit" id="button_azzera" class="btn btn-danger col-6" style="color: #FFFFFF;">AZZERA</button>
+                            </form>
+                          </div>
+                          <div class="col-6 text-end" >
+                            <form name="contabilita_email" action="?page=contabilita_invia_email" method="post"> 
+                                <input type="hidden" name="ide" id="ide" value="<?= $utente; ?>" />
+                                <input type="hidden" name="idm" id="idm" value="" />                
+                                <button type="submit" id="button_invia_email" class="btn btn-success col-6" style="color: #FFFFFF;">INVIA PER EMAIL</button>
+                            </form>
+                          </div>
+                      </div>
+                  </span>
+                
+          
+        </div>
+      </div>
+    </div>
+ <script  src="https://code.jquery.com/jquery-3.6.1.min.js"  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+	
+<script>
+$(document).ready(function() {
+    $('#id_prodotto').select2();
+    // pulisco da eventuali altri dati precedenti
+   // localStorage.removeItem("canaliLiberi");
+
+  
+});
+ 
+$(document).on('submit',function(){
+    let macchina_matricola = $('#macchina_matricola').val();
+   
+      
+                    if ( macchina_matricola == 0 ){
+                        alert('Devi selezionare una macchina!');
+                        return false;
+                    }
+
+});
+
+
+$('#macchina_matricola').on("change", function (event) {
+    
+    // split valori
+    let dati_macchina = $(this).val().split(',') ;
+
+    let id_macchina =  dati_macchina[0];
+    let matricola_macchina =  dati_macchina[1];
+    // valorizzo i 2 campi id macchina nei form azzera e invia email
+    $("#id_macchina").val(id_macchina);
+    $("#matricola_macchina_form").val(matricola_macchina);
+    $("#idm").val(id_macchina);
+    
+
+    let dati_contabilita = '';
+    $("#dati_contabilita").html('<div class="mb-3 row"> <div style="margin: 2px;" class="text-center col-md-12" ><h1>GENERALE</h1></div></div>');
+    $("#dati_contabilita").append('<div class="row"> <div  class="text-center col-sm-6" ><h3>Indicatori</h3></div> <div class="text-center col-sm-6" ><h3>Totali</h3></div></div>');
+   
+    $("#dati_contabilita_motori").html('<div class="mb-3 row"> <div style="margin: 2px;" class="text-center col-md-12" ><h1>CONTATORI MOTORI</h1></div></div>');
+    $("#dati_contabilita_motori").append('<div class="row"> <div  class="text-center col-md-4" ><h3>Erogatori</h3></div> <div class="text-center col-md-4" ><h3>Prodotti</h3></div> <div class="text-center col-md-4" ><h3>Incasso</h3></div></div>');
+
+    let dati_contabilita_motori = '';
+
+    if (!id_macchina ||  id_macchina == 0) {
+        $('#span_dati').addClass('d-none');
+        alert ('Devi prima selezionare una macchina!');
+        return false;
+    } else {
+            let id_esercente = <?= $utente; ?>;
+            let azzeramento = '';
+            $('#span_dati').removeClass('d-none');
+        //prendo contabilità per quella macchina
+        $.ajax({   
+                    url: "../public/api/vedi_contabilita_per_matricola_macchina.php",
+                    data: { ide: id_esercente, idm: id_macchina},
+                    type: 'POST',
+                    dataType: 'json',
+                    success: function (data) { 
+                     
+                    
+                    for (i = 0; i < data.length; ++i) {   
+
+                            
+                              if ( i == 0) {
+                                // primo record è la sola CONTABILITA'
+                                let id =  data[i].id;
+                                let incasso = data[i].incasso / 100;
+                                let incasso_monete = data[i].incasso_monete / 100;
+                                let incasso_banconote = data[i].incasso_banconote / 100;
+                                let incasso_pos = data[i].incasso_pos / 100;
+                                let incasso_cashless = data[i].incasso_cashless / 100;
+                                let incasso_scontrino = data[i].incasso_scontrino / 100;
+                                let resto_scontrino = data[i].resto_scontrino / 100;
+                                let resto_monete = data[i].resto_monete / 100;
+                                let resto_totale = data[i].resto_totale / 100;
+                                let totale_venduto = data[i].totale_venduto / 100;
+                                azzeramento = data[i].azzeramento;
+                                 
+                                dati_contabilita += '<div class="row"><div style="border: solid 1px #cccccc; background-color: #FFFFFF;" class="text-center col-md-6" ><h5>INCASSO TOTALE</h5></div> <div style="border: solid 1px #cccccc;background-color: #FFFFFF;" class="text-center  col-md-6" ><h5>' + incasso  +  '</h5></div>';
+                                dati_contabilita += '<div style="border: solid 1px #cccccc;" class="text-center col-md-6" ><h5>INCASSO (MONETA)</h5></div> <div style="border: solid 1px #cccccc;" class="text-center  col-md-6" ><h5>' + incasso_monete  +  '</h5></div>';
+                                dati_contabilita += '<div style="border: solid 1px #cccccc;background-color: #FFFFFF;" class="text-center col-md-6" ><h5>INCASSO (BANCONOTA)</h5></div> <div style="border: solid 1px #cccccc;background-color: #FFFFFF;" class="text-center  col-md-6" ><h5>' + incasso_banconote  +  '</h5></div>';
+                                dati_contabilita += '<div style="border: solid 1px #cccccc;" class="text-center col-md-6" ><h5>INCASSO (CASHLESS)</h5></div> <div style="border: solid 1px #cccccc;" class="text-center  col-md-6" ><h5>' + incasso_cashless  +  '</h5></div>';
+                                dati_contabilita += '<div style="border: solid 1px #cccccc;background-color: #FFFFFF;" class="text-center col-md-6" ><h5>INCASSO (POS)</h5></div> <div style="border: solid 1px #cccccc;background-color: #FFFFFF;" class="text-center  col-md-6" ><h5>' + incasso_pos  +  '</h5></div>';
+                                dati_contabilita += '<div style="border: solid 1px #cccccc;" class="text-center col-md-6" ><h5>INCASSO (TICKET)</h5></div> <div style="border: solid 1px #cccccc;" class="text-center  col-md-6" ><h5>' + incasso_scontrino  +  '</h5></div>';
+                                dati_contabilita += '<div style="border: solid 1px #cccccc;background-color: #FFFFFF;" class="text-center col-md-6" ><h5>RESTO SCONTRINO</h5></div> <div style="border: solid 1px #cccccc;background-color: #FFFFFF;" class="text-center  col-md-6" ><h5>' + resto_scontrino  +  '</h5></div>';
+                                dati_contabilita += '<div style="border: solid 1px #cccccc;" class="text-center col-md-6" ><h5>RESTO MONETA</h5></div> <div style="border: solid 1px #cccccc;" class="text-center  col-md-6" ><h5>' + resto_monete  +  '</h5></div>';
+                                dati_contabilita += '<div style="border: solid 1px #cccccc;background-color: #FFFFFF;" class="text-center col-md-6" ><h5>RESTO TOTALE (SCONTRINO + MONETA)</h5></div> <div style="border: solid 1px #cccccc;background-color: #FFFFFF;" class="text-center  col-md-6" ><h5>' + resto_totale  +  '</h5></div>';
+                                dati_contabilita += '<div style="border: solid 1px #cccccc;" class="text-center col-md-6" ><h5>TOTALE VENDUTO</h5></div> <div style="border: solid 1px #cccccc;" class="text-center  col-md-6" ><h5>' + totale_venduto  +  '</h5></div> </div>';
+                               
+                              } 
+                            } // END FOR DATA 
+                             
+                         
+
+                            for (x = 0; x < data[1].length; ++x) {   
+
+                              if(x % 2 == 0) {
+                                    style2 = "background-color: #FFFFFF;";
+                                  } else {
+                                    style2 = "";
+                                  }
+
+                                let incasso2 = data[1][x].incasso / 100;
+                                let titolo_prodotto = data[1][x].titolo_prodotto;
+                                let motore = data[1][x].motore ;
+                                let alias = data[1][x].alias;
+                                
+                                
+                                dati_contabilita_motori += '<div class="row"> <div style="border: solid 1px #cccccc; '+ style2 +'" class="text-center col-md-4" ><h5>' + alias + '</h5></div> <div style="border: solid 1px #cccccc; '+ style2 +'" class="col-md-4" ><h5>'+ titolo_prodotto +'</h5></div> <div style="border: solid 1px #cccccc; '+ style2 +'" class="text-center  col-md-4" ><h5>&euro; ' + incasso2 + '</h5></div></div>';
+                            }
+
+                             
+                        $("#dati_contabilita").append( dati_contabilita );
+                        $("#dati_contabilita_motori").append( dati_contabilita_motori );    
+                        $("#dati_contabilita_motori").append( '<div class="row"> <div style="border: solid 1px #cccccc;" class="text-center col-md-6" ><h3>ULTIMO AZZERAMENTO</h3></div> <div style="border: solid 1px #cccccc;" class="text-center col-md-6" ><h3>' + azzeramento + '</h3></div> </div>' );
+
+                       
+                    },
+                        error:function(){
+                            alert('ATTENZIONE DATI NON PRESENTI ');
+                            return false;
+                        }
+            }); // END CARICAMENTO DATI 
+        }
+    
+ });
+ 
+</script>

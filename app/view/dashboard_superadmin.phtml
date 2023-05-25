@@ -1,0 +1,308 @@
+ <div class="body flex-grow-1 px-3">
+        <div class="container-lg">
+          <div class="row"> 
+           <div class="col-sm-6 col-lg-3">
+              <div class="card mb-4 text-white bg-primary">
+                <div class="card-body pb-0 d-flex justify-content-between align-items-start">
+                  <div>
+                    <div class="fs-4 fw-semibold"><?= $numero_utenti['n_utenti']; ?> <span class="fs-6 fw-normal">
+                        <svg class="icon">
+                          <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-arrow-bottom"></use>
+                        </svg>Totali</span></div>
+                    <div>N. UTENTI </div>
+                  </div>
+                </div>
+                <div class="c-chart-wrapper mt-3 mx-3" style="height:70px;">
+                  <canvas class="chart" id="anag-esercenti" height="70"></canvas>
+                  <!--<canvas class="chart" id="card-chart1" height="70"></canvas>-->
+                  
+                </div>
+              </div>
+            </div>
+              
+           <div class="col-sm-6 col-lg-3">
+              <div class="card mb-4 text-white bg-info">
+                <div class="card-body pb-0 d-flex justify-content-between align-items-start">
+                  <div>
+                    <div class="fs-4 fw-semibold"><?= $numero_totale_macchine['numero_macchine']; ?> <span class="fs-6 fw-normal">
+                        <svg class="icon">
+                          <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-arrow-top"></use>
+                        </svg>Attuale</span></div>
+                    <div>Tot. NUMERO MACCHINE</div>
+                  </div>
+                
+                </div>
+                <div class="c-chart-wrapper mt-3 mx-3" style="height:70px;">
+                  <canvas class="chart" id="card-chart2" height="70"></canvas>
+                </div>
+              </div>
+            </div>
+              
+               <!-- /.col-->
+            <div class="col-sm-6 col-lg-3">
+              <div class="card mb-4 text-white bg-warning">
+                <div class="card-body pb-0 d-flex justify-content-between align-items-start">
+                  <div>
+                    <div class="fs-4 fw-semibold"><?= $numero_tot_prodotti_cat_generale['num_prodotti_cat_generale']; ?><span class="fs-6 fw-normal">
+                        <svg class="icon">
+                          <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-arrow-top"></use>
+                        </svg></span></div>
+                    <div>N. Prodotti Catalogo Generale</div>
+                  </div>
+                
+                </div>
+                <div class="c-chart-wrapper mt-3" style="height:70px;">
+                  <canvas class="chart" id="card-chart3" height="70"></canvas>
+                </div>
+              </div>
+            </div>
+               
+                <!-- /.col-->
+            <div class="col-sm-6 col-lg-3">
+              <div class="card mb-4 text-white bg-danger">
+                <div class="card-body pb-0 d-flex justify-content-between align-items-start">
+                  <div>
+                    <div class="fs-4 fw-semibold"><?= $numero_tot_prodotti_cat_esercente['num_prodotti_cat_esercente'] ?> <span class="fs-6 fw-normal">
+                        <svg class="icon">
+                          <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-arrow-bottom"></use>
+                        </svg> </span></div>
+                    <div>N. Prodotti Catalogo Esercenti</div>
+                  </div>
+                
+                </div>
+                <div class="c-chart-wrapper mt-3 mx-3" style="height:70px;">
+                  <canvas class="chart" id="card-chart4" height="70"></canvas>
+                </div>
+              </div>
+            </div>
+            <!-- /.col-->
+              
+          </div><!-- ROW -->
+          
+          <div class="card mb-4">
+<!--            <div class="card-body">
+              <div class="d-flex justify-content-between">
+                <div>
+                  <h4 class="card-title mb-0">Andamento MENSILE</h4>
+                  <div class="small text-medium-emphasis">OTTOBRE - 2022</div>
+                </div>
+              </div>
+              <div class="c-chart-wrapper" style="height:300px;margin-top:40px;">
+                <canvas class="chart" id="main-chart" height="300"></canvas>
+              </div>
+            </div>-->
+<!--            <div class="card-footer">
+              <div class="row row-cols-1 row-cols-md-5 text-center">
+                <div class="col mb-sm-2 mb-0">
+                  <div class="text-medium-emphasis">FATTURE</div>
+                  <div class="fw-semibold">29.703 Elaborate (40%)</div>
+                  <div class="progress progress-thin mt-2">
+                    <div class="progress-bar bg-success" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="col mb-sm-2 mb-0">
+                  <div class="text-medium-emphasis">CONSUMO smc</div>
+                  <div class="fw-semibold">24.093 FATTURE</div>
+                  <div class="progress progress-thin mt-2">
+                    <div class="progress-bar bg-info" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="col mb-sm-2 mb-0">
+                  <div class="text-medium-emphasis">CONSUMO smc</div>
+                  <div class="fw-semibold">78.706 Società di vendita</div>
+                  <div class="progress progress-thin mt-2">
+                    <div class="progress-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="col mb-sm-2 mb-0">
+                  <div class="text-medium-emphasis">CONSUMO smc</div>
+                  <div class="fw-semibold">22.123 Aquirente unico</div>
+                  <div class="progress progress-thin mt-2">
+                    <div class="progress-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="col mb-sm-2 mb-0">
+                  <div class="text-medium-emphasis">INCONGRUENZE</div>
+                  <div class="fw-semibold">48</div>
+                  <div class="progress progress-thin mt-2">
+                    <div class="progress-bar" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              </div>
+            </div>-->
+             <div class="card-body">  
+               <div class="table-responsive">
+                    <table class="table border mb-0">
+                        
+                      <thead class="table-light fw-semibold">
+                          <tr class="align-middle">
+                            <td class="text-center" colspan="6">
+                                ULTIMI 6 UTENTI LOGGATI
+                            </td><!-- comment -->
+                        </tr>
+                        <tr class="align-middle">
+                          <th class="text-center">
+                            <svg class="icon">
+                              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-people"></use>
+                            </svg>
+                          </th>
+                          <th>UTENTE</th>
+                          <th class="text-center">NAZIONE</th>
+                          <th>N. Login</th>
+                        
+                          <th class="text-center">ATTIVITA'</th>
+                          <th></th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                           <?php 
+                                                $img_count = 0;
+                                                foreach( $elenco_login as $row_utente) {
+                                                            $utente = $row_utente["utente"];  
+                                                            $data_scadenza =  $row_utente["data_scadenza"];
+                                                            $numero_login =  $row_utente["numero_login"];
+                                                            $primo_login =  $row_utente["primo_login"];
+                                                            $ultimo_login =  $row_utente["ultimo_login"];
+                                                            $giorni_da_utlimo_login =  $row_utente["giorni_da_utlimo_login"];
+                                                            $img_count++;
+                                                            
+                                   
+                            ?>
+                        <tr class="align-middle">
+                          <td class="text-center">
+                            <div class="avatar avatar-md"><img class="avatar-img" src="../public/img/avatars/<?= $img_count; ?>.jpg" alt="user@email.com"><span class="avatar-status bg-success"></span></div>
+                          </td>
+                          <td>
+                            <div><?= $utente; ?></div>
+                            <div class="small text-medium-emphasis"><span>Data scadenza</span> | <?= $data_scadenza; ?></div>
+                          </td>
+                          <td class="text-center">
+                            <svg class="icon icon-xl">
+                              <use xlink:href="vendors/@coreui/icons/svg/flag.svg#cif-it"></use> 
+                          </td>
+                              
+                          <td class="text-center">    
+                            <div class="clearfix">
+                              <div class="float-start">
+                                <div class="fw-semibold"><?= $numero_login; ?></div>
+                              </div>
+                              <div class="float-end"><small class="text-medium-emphasis">Dal: <?= $primo_login; ?> - Al:  <?= $ultimo_login; ?></small></div>
+                            </div>
+                            <div class="progress progress-thin">
+                              <div class="progress-bar bg-success" role="progressbar" style="width: <?= $numero_login; ?>%" aria-valuenow="<?= $numero_login; ?>" aria-valuemin="0" aria-valuemax="1000"></div>
+                            </div>
+                          </td>
+                        
+                          <td class="text-center">
+                            <div class="small text-medium-emphasis">Ultimo login</div>
+                            <div class="fw-semibold"><?= $giorni_da_utlimo_login; ?> giorni fà</div>
+                          </td>
+                         
+                        </tr>
+                    <?php } ?>
+                    
+                      </tbody>
+                    </table>
+                  </div>
+          </div><!-- End card body user -->
+          </div>
+          
+          
+          
+          
+        </div><!--Container -->
+        </div>
+  <script  src="https://code.jquery.com/jquery-3.6.1.min.js"  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+<script>
+$( document ).ready(function() {
+    
+    
+
+
+var cardChartEsercenti = new Chart(document.getElementById('anag-esercenti'), {
+  type: 'line',
+  data: {
+    labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
+    datasets: [{
+      label: 'ESERCENTI',
+      backgroundColor: 'transparent',
+      borderColor: 'rgba(255,255,255,.55)',
+      pointBackgroundColor: coreui.Utils.getStyle('--cui-primary'),
+      data: [40,60,50,80,90],
+    }]
+  },
+  options: {
+    plugins: {
+      legend: {
+        display: false
+      }
+    },
+    maintainAspectRatio: false,
+    scales: {
+      x: {
+        grid: {
+          display: false,
+          drawBorder: false
+        },
+        ticks: {
+          display: false
+        }
+      },
+      y: {
+        min: 10,
+        max: 100,
+        display: false,
+        grid: {
+          display: false
+        },
+        ticks: {
+          display: false
+        }
+      }
+    },
+    elements: {
+      line: {
+        borderWidth: 1,
+        tension: 0.4
+      },
+      point: {
+        radius: 4,
+        hitRadius: 10,
+        hoverRadius: 4
+      }
+    }
+  }
+}); // eslint-disable-next-line no-unused-vars    
+   
+    
+    
+        
+
+// ajax_chart(cardChartEsercenti , "./api/anagrafiche_esercenti.php");
+
+    // function to update our chart
+//    function ajax_chart(chart, url, data) {
+//        var data = data || {};
+//        const valori = [];
+//        $.getJSON(url, data).done(function(response) {
+//          
+//           for(var key in response) {
+//               for (var key1 in response[key]) {
+//                    valori.push ( response[key][key1].quantity); // or you can iterate for multiple datasets
+//                }
+//              }
+//                      chart.data.datasets[0].data = valori;
+
+// PASSATI VALORI DI TEST PERCHE' NON PIU' DINAMICI
+//                      chart.data.datasets[0].data = [40,70,60,90,40];
+                      
+//            chart.update(); // finally update our chart
+//        });
+//    }
+    
+});
+    
+    </script>
+    
+ 

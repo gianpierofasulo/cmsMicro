@@ -1,0 +1,16 @@
+<?php
+
+
+if ( $_SESSION['utente_id_ruolo'] && $_SESSION['utente_id_ruolo'] == 1) {
+    // SUPER ADMIN
+    require_once 'leftsidebarsuperadmin.php';
+} else if ( $_SESSION['utente_id_ruolo'] && $_SESSION['utente_id_ruolo'] == 2) {
+    // ADMIN
+    require_once 'leftsidebaradmin.php';
+} else if ( $_SESSION['utente_id_ruolo'] && $_SESSION['utente_id_ruolo'] == 3) {
+    // ESERCENTE
+    require_once 'leftsidebaresercente.php';
+}  else if ( $_SESSION['utente_id_ruolo'] && $_SESSION['utente_id_ruolo'] == 4) {
+    // GESTORE
+    require_once 'leftsidebargestore.php';
+} 

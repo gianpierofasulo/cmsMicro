@@ -1,0 +1,412 @@
+  <div class="bg-light  d-flex flex-row align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-12">
+            <div class="clearfix">
+              <h1 class=" text-center">VETRINE - DIGITALI</h1>
+              <br />
+             
+            </div>
+              
+          </div>
+           <form name="vetrina" action="?page=vetrina_assegna_prodotto_insert" method="post" id="formvetrina"> 
+                <div class="mb-3 row">
+                     <label for="macchina_matricola" class="col-sm-2 col-form-label">Seleziona la macchina </label>
+                        <div class="col-sm-6">
+                                <select name="macchina_matricola" id="macchina_matricola" class="form-select" aria-label="Default select example">
+                                    <option value="0">SELEZIONA</option>
+                                        <?php foreach( $elenco_macchine as $row_macchina) {
+                                                                $id_macchina = $row_macchina["id"];  
+                                                                $macchina =  $row_macchina["macchina"];
+                                                                $id_vetrina =  $row_macchina["titolo"];
+
+                                                                $macchina_matricola = $id_macchina.','.$id_vetrina;
+
+                                                  if ( $macchina_matricola === $id_macchina_get ) {
+                                                        $selected = "selected";
+                                                  } else {
+                                                        $selected = "";
+                                                  }
+                                        ?>
+                                            <option <?= $selected; ?> value="<?= $id_macchina.','.$id_vetrina; ?>">Matr: <?= $macchina; ?></option>
+                                        <?php } ?>                 
+                                </select>
+                        </div>
+                </div>
+
+                <div class="mb-4 row">
+                     <label for="layout" class="col-sm-2 col-form-label">Layout vetrina</label>
+                        <div class="col-sm-6">
+                                <select name="layout" id="layout" class="form-select">
+                                                  
+                                            <option value="0">SELEZIONA</option>
+                                                    <?php
+                                                      if ( $id_vetrina_get == '4x9' ) {         
+                                                    ?>
+                                                      <option value="4x9" selected>Griglia 4x9</option>
+                                                    <?php }  else { ?>
+                                                      <option value="4x9">Griglia 4x9</option>
+                                                    <?php } ?>
+
+                                                    <?php
+                                                      if ( $id_vetrina_get == '6x5' ) {         
+                                                    ?>
+                                                      <option value="6x5" selected>Griglia 6x5</option>
+                                                    <?php }  else { ?>
+                                                      <option value="6x5">Griglia 6x5</option>
+                                                    <?php } ?>
+
+
+                                                    <?php
+                                                      if ( $id_vetrina_get == '8x5' ) {         
+                                                    ?>
+                                                      <option value="8x5" selected>Griglia 8x5</option>
+                                                    <?php }  else { ?>
+                                                      <option value="8x5">Griglia 8x5</option>
+                                                    <?php } ?>
+                                           
+                                          
+                                </select>
+                        </div>
+                </div>
+
+  
+                
+                      <div class="justify-content-center col-sm-12" id="vetrina_canali" style="margin: auto; text-align:center; background-color: white;"></div>                   
+               
+               
+            </form>
+        </div>
+      </div>
+    </div>
+   
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" class="modaleProdotti">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Seleziona prodotto</h5>
+        
+        <button type="button" class="btn-close" data-coreui-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+          <span id="id_prodotto"></span>
+          <input type="hidden" name="id_slot_prodotto" id="id_slot_prodotto" val="" />
+                  <select name="id_categoria_prodotto_selezionato" id="id_categoria_prodotto_selezionato" class="form-select" aria-label="Default select example">
+                                    <option value="0">SELEZIONA CATEGORIA</option>
+                                        <?php foreach( $elenco_categorie_vetrina as $row_categoria) {
+                                                                $id_categoria = $row_categoria["id_categoria"];  
+                                                                $label =  $row_categoria["label"];
+                                                             
+                                        ?>
+                                            <option value="<?= $id_categoria; ?>"><?= $label; ?></option>
+                                        <?php } ?>                 
+                  </select>
+                  <select name="id_prodotto_selezionato" id="id_prodotto_selezionato" class="form-select" aria-label="Default select example">
+                          <option value="0">SELEZIONA PRODOTTO</option>
+                              <?php foreach( $catalogo_prodotti as $row_porodtto) {
+                                                      $id_prodotto_sel = $row_porodtto["id"];  
+                                                      $des_prodotto_sel =  $row_porodtto["descrizione"];
+                                                  
+                              ?>
+                                  <option value="<?= $id_prodotto_sel; ?>"><?= $des_prodotto_sel; ?></option>
+                              <?php } ?>                 
+                  </select>
+      </div>
+      <div class="modal-footer">
+      
+        <button type="button" class="btn btn-primary" id="bottone_aggiorna_prodotto">AGGIORNA PRODOTTO</button>
+        <button type="button" class="btn btn-danger" id="bottone_cancella_prodotto">CANCELLA PRODOTTO</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+ <script  src="https://code.jquery.com/jquery-3.6.1.min.js"  integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+ <script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
+	
+<script>
+$(document).ready(function() {
+    let layout = $('#layout').val();
+    // trigger sul layout 
+    if ( layout != 0) {
+      $('#layout').trigger("change");
+    }
+  
+});
+
+
+$(document).on('submit',function(){
+    // split valori
+    let layout = $(this).val().split('x') ;
+
+    let righe =  layout[1];
+    let colonne =  layout[0];
+
+    let valori_macchina = $('#macchina_matricola').val().split(',');
+
+    let id_macchina = valori_macchina[0];
+    let id_vetrina = valori_macchina[1];
+
+  
+   
+                    if ( id_macchina == 0 || !layout){
+                        alert('Macchina e Layout sono Obbligatori!');
+                        return false;
+                    }
+
+});
+
+
+
+$(document).on("click", ".prodotto", function () {
+     let id_prodotto = null;
+     let id_slot = null;
+     let id_record = null;
+
+      id_prodotto = $(this).data('product');
+      id_slot = $(this).data('id_slot');
+      id_record = $(this).data('id_record');
+
+      let valori_macchina = $('#macchina_matricola').val().split(',');
+
+      let id_macchina = valori_macchina[0];
+      let id_vetrina = valori_macchina[1];
+
+      let id_esercente = <?= $utente; ?>;
+
+      let layout = $('#layout').val() ;
+      let valori_select_macchina = $('#macchina_matricola').val();
+
+     if ( id_prodotto ) {
+        $(".modal-body #id_prodotto").text( 'Stai modificando/cancellando il prodotto nello SLOT = ' + id_slot );
+        // seleziono il prod nella select option
+        $("#id_prodotto_selezionato").val(id_prodotto);
+        $("#id_slot_prodotto").val(id_slot);
+
+        
+        // CANCELLAZIONE PRODOTTO
+        $(".modal-footer #bottone_cancella_prodotto").on("click", function () {
+          let text = "Premi OK per confermare la cancellazione!";
+              if ( confirm(text) == true && id_record > 0) {
+
+                      $.ajax({   
+                                url: "../public/api/cancella_prodotto_vetrina_digitale.php",
+                                data: { id_record: id_record},
+                                type: 'POST',
+                                dataType: 'json',
+                                success: function (data) { 
+                                  if (data.risposta == 'ok') {
+                                    alert ('PRODOTTO CANCELLATO CON SUCCESSO');
+                                    // location.reload();
+                                    window.location.search += '&idm=' + valori_select_macchina + '&idv=' + layout;
+                                  }
+                                  
+                                },
+                                    error:function(){
+                                        alert('ATTENZIONE ERRORE DATI ');
+                                        return false;
+                                    }
+                          }); // END CARICAMENTO DATI 
+
+                    location.reload();
+              } // END AJAX
+ 
+        }); 
+
+        // MODIFICA PRODOTTO
+        $(".modal-footer #bottone_aggiorna_prodotto").on("click", function () {
+          let id_prodotto_selezionato = $(".modal-body #id_prodotto_selezionato").val();
+          let id_categoria_prodotto_selezionato = $(".modal-body #id_categoria_prodotto_selezionato").val();
+          let text = "Premi OK per confermare la MODIFICA!";
+
+              if ( confirm(text) == true && id_record > 0) {
+
+                      $.ajax({   
+                                url: "../public/api/modifica_prodotto_vetrina_digitale.php",
+                                data: { id_prodotto_selezionato: id_prodotto_selezionato, id_record: id_record },
+                                type: 'POST',
+                                dataType: 'json',
+                                success: function (data) { 
+                                  if (data.risposta == 'ok') {
+                                    alert ('PRODOTTO MODIFICATO CON SUCCESSO');
+                                    // location.reload();
+                                    window.location.search += '&idm=' + valori_select_macchina + '&idv=' + layout;
+                                  }
+                                  
+                                },
+                                    error:function(){
+                                        alert('ATTENZIONE ERRORE DATI ');
+                                        return false;
+                                    }
+                          }); // END CARICAMENTO DATI 
+
+                  
+              }  // END AJAX
+ 
+        });
+        
+     } else {
+          // NUOVO PRODOTTO
+          $(".modal-body #id_prodotto").text( 'Stai AGGIUNGENDO un prodotto nello SLOT = ' + id_slot);
+          console.log( 'id slot ' + id_slot + 'id prodotto selez ' +  id_prodotto_selezionato + 'id esercente ' + id_esercente, 'id_macchina:' + id_macchina, 'layout:'+ layout + 'id_vetrina:' + id_vetrina );
+          $(".modal-footer #bottone_aggiorna_prodotto").on("click", function () {
+          let text = "Premi OK per confermare l'INSERIMENTO!";
+                if ( confirm(text) == true ) {
+                  let id_prodotto_selezionato = $(".modal-body #id_prodotto_selezionato").val();
+                    $.ajax({   
+                              url: "../public/api/aggiungi_prodotto_vetrina_digitale.php",
+                              data: { id_slot: id_slot, id_prodotto_selezionato: id_prodotto_selezionato,
+                                 id_esercente: id_esercente, id_macchina: id_macchina, layout: layout, id_vetrina: id_vetrina },
+                              type: 'POST',
+                              dataType: 'json',
+                              success: function (data) { 
+                                if (data.risposta == 'ok') {
+                                  alert ('PRODOTTO AGGIUNTO CON SUCCESSO');
+                                  // location.reload();
+                                  window.location.search += '&idm=' + valori_select_macchina + '&idv=' + layout;
+                                }
+                                
+                              },
+                                  error:function(){
+                                      alert('ATTENZIONE ERRORE DATI ');
+                                      return false;
+                                  }
+                        }); // END CARICAMENTO DATI 
+
+
+              }  // END AJAX
+
+        });
+               
+
+     } // END ELSE
+    
+});
+
+$('#macchina_matricola').on("change", function (event) {
+
+  $('#layout').val(0);
+  $('#layout').trigger("change");
+
+});
+
+$('#layout').on("change", function (event) {
+    
+    // split valori
+    let layout = $(this).val().split('x') ;
+
+    let righe =  layout[1];
+    let colonne =  layout[0];
+
+    let valori_macchina = $('#macchina_matricola').val().split(',');
+
+    let id_macchina = valori_macchina[0];
+    let id_vetrina = valori_macchina[1];
+
+    if ( id_macchina == 0 && layout != 0) {
+        alert ('Devi prima selezionare una macchina!');
+        $(this).val(0);
+        return false;
+    } else {
+        
+
+        let numero_prodotti = (righe * colonne);
+        let conta_prodotti = 0;
+        let indice_prodotti_array = conta_prodotti;
+
+       
+
+        let initDiv = '';
+        let endDiv = '';
+        let id_esercente = <?= $utente; ?>;
+        let vetrina =  $("#vetrina_canali").html('');
+            vetrina =  $("#vetrina_canali").append('<h3 class="text-center">LISTA CANALI</h3>');
+
+            let dati_vetrina = [];
+
+                              //prendo i dati
+                              $.ajax({   
+                                      url: "../public/api/vetrina_digitale.php",
+                                      data: { id_esercente: id_esercente, id_macchina: id_macchina, id_vetrina: id_vetrina},
+                                      type: 'GET',
+                                      dataType: 'json',
+                                      success: function (data) { 
+                                        Array.prototype.insert = function ( index, ...items ) {
+                                                    this.splice( index, 0, ...items );
+                                                };
+                                        
+                                      for (i = 0; i < data.length; ++i) { 
+
+                                               dati_vetrina.insert(  data[i].id_slot, {id_record: data[i].id , id_prodotto: data[i].id_prodotto , immagine: data[i].immagine , id_slot: data[i].id_slot, titolo: data[i].titolo} );
+
+                                          } // END FOR DATA
+
+                                          // console.log( JSON.stringify(dati_vetrina) );
+
+                                          // let numero_prodotti_array = dati_vetrina.length;
+                                          for (r = 1; r <= righe; ++r) {
+          
+                                                  vetrinaC = "<div class='row col-sm-offset-2' style='margin: auto auto;'>";
+
+                                                  for ( c = 0; c <= colonne -1 ; ++c ) { 
+                                                    if ( c == colonne ) {
+                                                        
+                                                        endDiv = '</div>';
+                                                    } else {
+                                                        endDiv = '';
+                                                    }
+
+                                                 
+                                                              // indice_prodotti_array++;
+                                                              const datiProdotto = dati_vetrina.find(obj => obj.id_slot == conta_prodotti);
+
+                                                        if (  datiProdotto != undefined  ) {
+                                                              let id_slot = `${datiProdotto.id_slot}`;
+                                                              let id_prodotto = `${datiProdotto.id_prodotto}`;
+                                                              let immagine = `${datiProdotto.immagine}`;
+                                                              let id_record = `${datiProdotto.id_record}`;
+                                                              let titolo = `${datiProdotto.titolo}`;
+                                                              
+                                                              // c'è un prodotto
+                                                              // console.log('id slot = ' + id_slot + ' CONTA PRODOTTI = ' + conta_prodotti);
+                                                              
+                                                                vetrinaC += '<div data-coreui-toggle="modal" data-coreui-target="#exampleModal" style="padding: 30px; width: 120px; margin: 15px;" class="text-center  prodotto" data-id_record="'+ id_record +'" data-id_slot="'+ id_slot +'" data-product="'+ id_prodotto +'">' 
+                                                                + 'Item: ' + (conta_prodotti + 1) + '<img style="border: 1px solid;  width: 120px;" src="../app/immaginiprodotti/' + immagine + '"><br /><span class="col-2" style="font-size: 10px; width: 120px; display: block;">'+ titolo +'</span></div>' + endDiv;
+                                                           
+                                                        } else {
+                                                             
+                                                              vetrinaC += '<div data-coreui-toggle="modal" data-coreui-target="#exampleModal" style=" padding: 30px; width: 120px; margin: 15px;" class="text-center col-1 prodotto" data-product="0"  data-id_slot="'+ (conta_prodotti) +'"   >'
+                                                               + 'Item: ' + (conta_prodotti + 1) + '<svg style="border: 1px solid;" width="110" class="nav-icon" ><use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-plus"></use></svg> </div>' + endDiv;
+                                                            
+                                                              //  console.log('NESSUNA IMMAGINE CONTA_PRODOTTI = ', conta_prodotti);
+                                                              //  console.log('INDICE ARRAY = ', indice_prodotti_array);
+                                                                
+                                                        }
+                                                             
+                                                        conta_prodotti++;
+                                                      
+                                             
+                                                          
+                                                  }
+                                                  vetrinaC += '</div>';
+                                                  $("#vetrina_canali").append( vetrinaC );
+                                          } // END FOR RIGHE
+
+
+                                      },
+                                          error:function(){
+                                              alert('ATTENZIONE ERRORE DATI ');
+                                              return false;
+                                          }
+                            }); // END CARICAMENTO DATI 
+
+                    
+          
+
+        }
+    
+ });
+ 
+</script>

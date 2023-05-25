@@ -1,0 +1,65 @@
+
+  
+
+   <div id="messaggio" class="alert alert-danger alert-dismissable">
+                                        <i class="fa fa-info"></i>
+                                        
+                                        <b>ATTENZIONE</b><br />
+                                        Da questa pagina si modificano i dati relativi alla propria utenza.
+                                        In caso di modifica password, le modifiche saranno funzionanti dal prossimo accesso.
+                                        <br />
+                                        <strong>Se non si vuole modificare la password ma solo gli altri dati lasciare la password in bianco.</strong>
+    </div>
+ <form name="login" id="login" method="post" action="?page=proflo_modifica_dati" >
+     <input type="hidden" name="utente_id" value="<?= $utente_id; ?>" />
+                    <div class="card-group d-block d-md-flex row">
+              
+                    <div class="card col-md-7 p-4 mb-0">
+                      <div class="card-body">
+                        <h1>MODIFICA PROFILO</h1>
+                        <p class="text-medium-emphasis">Dati accesso gestionale</p>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">
+                            <svg class="icon">
+                              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-user"></use>
+                            </svg>
+                            </span>
+                          <input class="form-control" value="<?= $utente_email; ?>" type="text" name="indirizzo_email" id="indirizzo_email" placeholder="Indirizzo E-mail">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">
+                            <svg class="icon">
+                              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-user"></use>
+                            </svg>
+                            </span>
+                          <input class="form-control" value="<?= $utente_nome; ?>" type="text" name="utente_nome" id="utente_nome" placeholder="nome">
+                        </div>
+                        <div class="input-group mb-3">
+                            <span class="input-group-text">
+                            <svg class="icon">
+                              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-user"></use>
+                            </svg>
+                            </span>
+                          <input class="form-control" value="<?= $utente_cognome; ?>" type="text" name="utente_cognome" id="utente_cognome" placeholder="cognome">
+                        </div>
+                        
+                        <div class="input-group mb-4"><span class="input-group-text">
+                            <svg class="icon">
+                              <use xlink:href="vendors/@coreui/icons/svg/free.svg#cil-lock-locked"></use>
+                            </svg></span>
+                          <input class="form-control" value="" type="password" name="password" id="password" placeholder="Lascia vuoto se non vuoi modificarla" >
+                        </div>
+                        
+                        <div class="row ">
+                          <div class="col-6 offset-6 text-end">
+                            <button class="btn btn-danger px-4" type="submit" id="bottone_modifica_dati" >MODIFICA DATI</button>
+                          </div>
+                       
+                        </div>
+                     
+                      </div>
+                    </div>
+                    </div>
+ </form>
+  
+   
